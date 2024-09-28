@@ -18,8 +18,11 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	require("plugins.telescope"),
-	require("plugins.nightfox")
-
+	require("plugins.nightfox"),
+	require("plugins.vim-sleuth"),
+	require("plugins.gitsigns"),
+	require("plugins.which-key"),
+	require("plugins.lualine"),
 }
 local options = {}
 
