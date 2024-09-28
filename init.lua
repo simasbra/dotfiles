@@ -23,8 +23,16 @@ local plugins = {
 	require("plugins.gitsigns"),
 	require("plugins.which-key"),
 	require("plugins.lualine"),
+	require("plugins.lazydev"),
+	require("plugins.luvit-meta"),
+	require("plugins.nvim-lspconfig"),
+	require("plugins.nvim-treesitter"),
+	require("plugins.nvim-cmp"),
+	require("plugins.nvim-autopairs")
 }
+
 local options = {}
 
 require("lazy").setup(plugins, options)
+
 vim.cmd.colorscheme("nightfox")
