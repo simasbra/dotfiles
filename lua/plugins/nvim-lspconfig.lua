@@ -26,9 +26,9 @@ return {
 				map("<leader>ws", require("telescope.builtin").lsp_dynamic_workspace_symbols, "[W]orkspace [S]ymbols")
 				map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
 				map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
-				map("<leader>tn", vim.lsp.buf.hover, "[T] togge ope[n] hover documentation")
+				map("N", vim.lsp.buf.hover, "Display hover information")
 
-				-- The following two autocommands are used to highlight references of the
+				-- The following two auto commands are used to highlight references of the
 				-- word under your cursor when your cursor rests there for a little while.
 				--    See `:help CursorHold` for information about when this is executed
 				local client = vim.lsp.get_client_by_id(event.data.client_id)
@@ -77,7 +77,6 @@ return {
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
 			clangd = {},
-			cmake = {},
 			codespell = {},
 			cpptools = {},
 			pylsp = {
@@ -90,10 +89,18 @@ return {
 					},
 				},
 			},
+			lua_ls = {},
+			harper_ls = {},
+			html = {},
+			jsonls = {},
+			omnisharp = {},
+			omnisharp_mono = {},
 		}
 
+		local ensure_installed = vim.tbl_keys(servers)
+
 		require("mason").setup()
-		require("mason-tool-installer").setup { ensure_installed = servers }
+		require("mason-tool-installer").setup { ensure_installed = ensure_installed }
 		require("mason-lspconfig").setup {
 			handlers = {
 				function(server_name)

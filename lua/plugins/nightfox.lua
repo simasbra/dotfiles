@@ -49,11 +49,22 @@ return {
 					-- bg3 = "#29394f", -- Lighter bg (cursor line)
 					-- bg4 = "#39506d", -- Conceal, border fg
 
+					-- fg0 = "#d6d6d7", -- Lighter fg
+					-- fg1 = "#cdcecf", -- Default fg
+					-- fg2 = "#aeafb0", -- Darker fg (status line)
+					-- fg3 = "#71839b", -- Darker fg (line numbers, fold colums)
+
+					-- sel0 = "#2b3b51", -- Popup bg, visual selection bg
+					-- sel1 = "#3c5372", -- Popup sel bg, search bg
+
 					bg0 = "#080b0e", -- Dark bg (status line and float)
 					bg1 = "#000000", -- Default bg
 					bg2 = "#10171f", -- Lighter bg (colorcolm folds)
 					bg3 = "#192330", -- Lighter bg (cursor line)
 					bg4 = "#222f41", -- Conceal, border fg
+
+					sel0 = "#222f41", -- Popup bg, visual selection bg
+					sel1 = "#334761", -- Popup sel bg, search bg
 				},
 				specs = {},
 				groups = {},
