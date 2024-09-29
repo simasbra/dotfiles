@@ -2,28 +2,21 @@ return {
 	"hrsh7th/nvim-cmp",
 	event = "InsertEnter",
 	dependencies = {
-		{
-			"L3MON4D3/LuaSnip",
-			build = (function()
-				-- Build Step is needed for regex support in snippets.
-				return "make install_jsregexp"
-			end)(),
-			dependencies = {},
-		},
-		"saadparwaiz1/cmp_luasnip",
+		"dcampos/nvim-snippy",
+		"dcampos/cmp-snippy",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-path",
 	},
 	config = function()
 		-- See `:help cmp`
 		local cmp = require "cmp"
-		local luasnip = require "luasnip"
-		luasnip.config.setup {}
+		local snippy = require("snippy")
+		snippy.setup({})
 
 		cmp.setup {
 			snippet = {
 				expand = function(args)
-					luasnip.lsp_expand(args.body)
+					snippy.expand_snippet(args.body)
 				end,
 			},
 			completion = { completeopt = "menu,menuone,noinsert" },
@@ -40,19 +33,16 @@ return {
 				-- Accept ([y]es) the completion.
 				["<C-y>"] = cmp.mapping.confirm { select = true },
 
-				-- Manually trigger a completion from nvim-cmp.
-				["<C-Space>"] = cmp.mapping.complete {},
-
 				-- <c-e> will move you to the right of each of the expansion locations.
 				-- <c-h> is similar, except moving you backwards.
 				["<C-e>"] = cmp.mapping(function()
-					if luasnip.expand_or_locally_jumpable() then
-						luasnip.expand_or_jump()
+					if snippy.can_expand_or_advance() then
+						snippy.expand_or_advance()
 					end
 				end, { "i", "s" }),
 				["<C-h>"] = cmp.mapping(function()
-					if luasnip.locally_jumpable(-1) then
-						luasnip.jump(-1)
+					if snippy.can_jump(-1) then
+						snippy.previous()
 					end
 				end, { "i", "s" }),
 			},
@@ -62,12 +52,9 @@ return {
 					group_index = 0,
 				},
 				{ name = "nvim_lsp" },
-				{ name = "luasnip" },
+				-- { name = "luasnip" },
+				{ name = 'snippy' },
 				{ name = "path" },
-			},
-			window = {
-				-- completion = cmp.config.window.bordered(),
-				-- documentation = cmp.config.window.bordered(),
 			},
 		}
 	end,
