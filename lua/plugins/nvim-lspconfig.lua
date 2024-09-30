@@ -95,7 +95,8 @@ return {
 			jsonls = {},
 			omnisharp = {},
 			omnisharp_mono = {},
-			quick_lint_js = {}
+			quick_lint_js = {},
+			eslint = {},
 		}
 
 		local ensure_installed = vim.tbl_keys(servers)
