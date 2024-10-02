@@ -28,7 +28,8 @@ local plugins = {
 	require("plugins.nvim-lspconfig"),
 	require("plugins.nvim-treesitter"),
 	require("plugins.nvim-cmp"),
-	require("plugins.nvim-autopairs")
+	require("plugins.nvim-autopairs"),
+	require("plugins.oil"),
 }
 
 local options = {}
