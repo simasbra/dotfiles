@@ -95,7 +95,7 @@ return {
 			jsonls = {},
 			omnisharp = {},
 			omnisharp_mono = {},
-			quick_lint_js = {},
+			-- quick_lint_js = {},
 			eslint = {},
 		}
 
