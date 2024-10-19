@@ -28,7 +28,7 @@ return {
 				concealcursor = "nvic",
 			},
 			-- Send deleted files to the trash instead of permanently deleting them (:help oil-trash)
-			delete_to_trash = false,
+			delete_to_trash = true,
 			-- Skip the confirmation popup for simple operations (:help oil.skip_confirm_for_simple_edits)
 			skip_confirm_for_simple_edits = true,
 			-- Selecting a new/moved/renamed file or directory will prompt you to save changes first
@@ -59,22 +59,22 @@ return {
 			-- Set to `false` to remove a keymap
 			-- See :help oil-actions for a list of all available actions
 			keymaps = {
-				["g?"] = "actions.show_help",
-				["<CR>"] = "actions.select",
-				["<C-s>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical split" },
-				["<C-h>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a horizontal split" },
-				["<C-t>"] = { "actions.select", opts = { tab = true }, desc = "Open the entry in new tab" },
-				["<C-p>"] = "actions.preview",
-				["<C-c>"] = "actions.close",
-				["<C-l>"] = "actions.refresh",
-				["-"] = "actions.parent",
-				["_"] = "actions.open_cwd",
-				["`"] = "actions.cd",
+				["g?"] = { "actions.show_help" },
+				["<CR>"] = { "actions.select" },
+				["<C-s>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical [s]plit" },
+				["<C-h>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a [h]orizontal split" },
+				["<C-t>"] = { "actions.select", opts = { tab = true }, desc = "Open the entry in new [t]ab" },
+				["<C-p>"] = { "actions.preview", desc = "[P]review the entry"},
+				["<C-c>"] = { "actions.close", desc = "[C]lose" },
+				["<C-l>"] = { "actions.refresh", desc = "refresh" },
+				["-"] = { "actions.parent", desc = "Go back a directory" },
+				["_"] = { "actions.open_cwd", desc = "Open current working directory" },
+				["`"] = { "actions.cd", desc = "Change directory" },
 				["~"] = { "actions.cd", opts = { scope = "tab" }, desc = ":tcd to the current oil directory" },
-				["gs"] = "actions.change_sort",
-				["gx"] = "actions.open_external",
-				["g."] = "actions.toggle_hidden",
-				["g\\"] = "actions.toggle_trash",
+				["gs"] = { "actions.change_sort", desc = "Chage [s]orting direction" },
+				["gx"] = { "actions.open_external", desc = "Open in external editor/browser" },
+				["g."] = { "actions.toggle_hidden", desc = "Show hidden files" },
+				["g\\"] = { "actions.toggle_trash" },
 			},
 			-- Set to false to disable all of the above keymaps
 			use_default_keymaps = true,

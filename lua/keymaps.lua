@@ -13,38 +13,40 @@ vim.keymap.set("n", "<C-e>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-n>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Move [d]own a page" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
+
 -- Colemak remappings
-local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
+local map = vim.keymap.set
 local remappings = {
 	-- Normal mode remappings
-	{ "n", "J", "E" }, -- jump end WORD (swap E)
-	{ "n", "j", "e" }, -- jump end word (swap e)
-	{ "n", "N", "K" }, -- help (swap K)
-	{ "n", "n", "j" }, -- down (swap j)
-	{ "n", "E", "J" }, -- join lines (swap J)
-	{ "n", "e", "l" }, -- right (swap l)
-	{ "n", "K", "N" }, -- ok prev find (swap N)
-	{ "n", "k", "n" }, -- ok next find (swap n)
-	{ "n", "H", "H" }, -- no change
-	{ "n", "h", "h" }, -- no change
-	{ "n", "L", "L" }, -- no change
-	{ "n", "l", "k" }, -- up (swap k)
+	{ "n", "J", "E", "Jump end WORD (swap E)" },
+	{ "n", "j", "e", "Jump end word (swap e)" },
+	{ "n", "N", "K", "Help (swap K)" },
+	{ "n", "n", "j", "Down (swap j)" },
+	{ "n", "E", "J", "Join lines (swap J)" },
+	{ "n", "e", "l", "Right (swap l)" },
+	{ "n", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
+	{ "n", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "n", "H", "H", "Screen top" },
+	{ "n", "h", "h", "Left" },
+	{ "n", "L", "L", "Screen bottom" },
+	{ "n", "l", "k", "Up (swap k)" },
 	-- Visual mode remappings
-	{ "v", "J", "E" },
-	{ "v", "j", "e" },
-	{ "v", "N", "K" },
-	{ "v", "n", "j" },
-	{ "v", "E", "J" },
-	{ "v", "e", "l" },
-	{ "v", "K", "N" },
-	{ "v", "k", "n" },
-	{ "v", "H", "H" }, -- no change
-	{ "v", "h", "h" }, -- no change
-	{ "v", "L", "L" }, -- no change
-	{ "v", "l", "k" },
+	{ "v", "J", "E", "Jump end WORD (swap E)" },
+	{ "v", "j", "e", "Jump end word (swap e)" },
+	{ "v", "N", "K", "Help (swap K)" },
+	{ "v", "n", "j", "Down (swap j)" },
+	{ "v", "E", "J", "Join lines (swap J)" },
+	{ "v", "e", "l", "Right (swap l)" },
+	{ "v", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
+	{ "v", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "v", "H", "H", "Screen top" },
+	{ "v", "h", "h", "Left" },
+	{ "v", "L", "L", "Screen bottom" },
+	{ "v", "l", "k", "Up (swap k)" },
 }
 -- Apply the remappings
 for _, mapping in ipairs(remappings) do
-	map(mapping[1], mapping[2], mapping[3], opts)
+	map(mapping[1], mapping[2], mapping[3], { noremap = true, silent = true, desc = mapping[4] })
 end
