@@ -83,8 +83,8 @@ return {
 				settings = {
 					pylsp = {
 						plugins = {
-							-- autopep8 = { enabled = false },
-							yapf = { enabled = false },
+							pycodestyle = { maxLineLength = 120 },
+							flake8 = { maxLineLength = 120 },
 						},
 					},
 				},
