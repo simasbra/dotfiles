@@ -1,3 +1,4 @@
+--  See `:help wincmd` for a list of all window commands
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -7,16 +8,15 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
---  See `:help wincmd` for a list of all window commands
-vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
-vim.keymap.set("n", "<C-e>", "<C-w><C-l>", { desc = "Move focus to the right window" })
-vim.keymap.set("n", "<C-n>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
-vim.keymap.set("n", "<C-l>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
-
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Move [d]own a page" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
 
 -- Colemak remappings
+vim.keymap.set("n", "<C-w>h", "<C-w><C-h>", { noremap = true, desc = "Go to the left window" })
+vim.keymap.set("n", "<C-w>e", "<C-w><C-l>", { noremap = true, desc = "Go to the right window" })
+vim.keymap.set("n", "<C-w>n", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
+vim.keymap.set("n", "<C-w>l", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
+
 local map = vim.keymap.set
 local remappings = {
 	-- Normal mode remappings

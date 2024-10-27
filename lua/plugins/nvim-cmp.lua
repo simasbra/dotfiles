@@ -34,12 +34,12 @@ return {
 				["<C-y>"] = cmp.mapping.confirm { select = true },
 
 				-- <c-e> will move you to the right of each of the expansion locations.
-				-- <c-h> is similar, except moving you backwards.
 				["<C-e>"] = cmp.mapping(function()
 					if snippy.can_expand_or_advance() then
 						snippy.expand_or_advance()
 					end
 				end, { "i", "s" }),
+				-- <c-h> is similar, except moving you backwards.
 				["<C-h>"] = cmp.mapping(function()
 					if snippy.can_jump(-1) then
 						snippy.previous()
@@ -52,7 +52,6 @@ return {
 					group_index = 0,
 				},
 				{ name = "nvim_lsp" },
-				-- { name = "luasnip" },
 				{ name = 'snippy' },
 				{ name = "path" },
 			},

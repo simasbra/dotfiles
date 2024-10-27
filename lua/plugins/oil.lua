@@ -71,13 +71,13 @@ return {
 				["_"] = { "actions.open_cwd", desc = "Open current working directory" },
 				["`"] = { "actions.cd", desc = "Change directory" },
 				["~"] = { "actions.cd", opts = { scope = "tab" }, desc = ":tcd to the current oil directory" },
-				["gs"] = { "actions.change_sort", desc = "Chage [s]orting direction" },
+				["ts"] = { "actions.change_sort", desc = "[T]oggle [s]orting direction" },
 				["gx"] = { "actions.open_external", desc = "Open in external editor/browser" },
-				["g."] = { "actions.toggle_hidden", desc = "Show hidden files" },
-				["g\\"] = { "actions.toggle_trash" },
+				["t."] = { "actions.toggle_hidden", desc = "[T]oggle hidden files" },
+				["t\\"] = { "actions.toggle_trash", desc = "[T]oggle trash" },
 			},
 			-- Set to false to disable all of the above keymaps
-			use_default_keymaps = true,
+			use_default_keymaps = false,
 			view_options = {
 				-- Show files and directories that start with "."
 				show_hidden = false,

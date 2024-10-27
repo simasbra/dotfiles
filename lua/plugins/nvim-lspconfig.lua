@@ -92,10 +92,7 @@ return {
 			lua_ls = {},
 			harper_ls = {},
 			html = {},
-			jsonls = {},
 			omnisharp = {},
-			-- omnisharp_mono = {},
-			-- quick_lint_js = {},
 			eslint = {},
 		}
 
