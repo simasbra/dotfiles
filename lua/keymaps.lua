@@ -1,23 +1,31 @@
+local map = vim.keymap.set
+
 --  See `:help wincmd` for a list of all window commands
 -- Clear highlights on search when pressing <Esc> in normal mode
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
-vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+map("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
-vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Move [d]own a page" })
-vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
+map("n", "<C-d>", "<C-d>zz", { noremap = true, desc = "Move [d]own a page" })
+map("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
 
 -- Colemak remappings
-vim.keymap.set("n", "<C-w>h", "<C-w><C-h>", { noremap = true, desc = "Go to the left window" })
-vim.keymap.set("n", "<C-w>n", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
-vim.keymap.set("n", "<C-w>l", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
-vim.keymap.set("n", "<C-w>e", "<C-w><C-l>", { noremap = true, desc = "Go to the right window" })
 
-local map = vim.keymap.set
+-- Window remappings
+map("n", "<C-w>h", "<C-w><C-h>", { noremap = true, desc = "Go to the left window" })
+map("n", "<C-w>n", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
+map("n", "<C-w>l", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
+map("n", "<C-w>e", "<C-w><C-l>", { noremap = true, desc = "Go to the right window" })
+map("n", "<C-w><C-h>", "<C-w><C-h>", { noremap = true, desc = "Go to the left window" })
+map("n", "<C-w><C-n>", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
+map("n", "<C-w><C-l>", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
+map("n", "<C-w><C-e>", "<C-w><C-l>", { noremap = true, desc = "Go to the right window" })
+
+-- Control remappings
 local remappings = {
 	-- Normal mode remappings
 	{ "n", "J", "E", "Jump end WORD (swap E)" },
