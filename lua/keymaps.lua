@@ -27,7 +27,7 @@ map("n", "<C-w><C-e>", "<C-w><C-l>", { noremap = true, desc = "Go to the right w
 
 -- Control remappings
 local remappings = {
-	-- Normal mode remappings
+	-- Normal mode
 	{ "n", "J", "E", "Jump end WORD (swap E)" },
 	{ "n", "j", "e", "Jump end word (swap e)" },
 	{ "n", "N", "K", "Help (swap K)" },
@@ -37,7 +37,7 @@ local remappings = {
 	{ "n", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
 	{ "n", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
 	{ "n", "l", "k", "Up (swap k)" },
-	-- Visual mode remappings
+	-- Visual mode
 	{ "v", "J", "E", "" },
 	{ "v", "j", "e", "" },
 	{ "v", "N", "K", "" },
@@ -47,6 +47,16 @@ local remappings = {
 	{ "v", "K", "Nzz", "" }, -- Also centers the text
 	{ "v", "k", "nzz", "" }, -- Also centers the text
 	{ "v", "l", "k", "" },
+	-- Operator pending mode
+	{ "o", "J", "E", "" },
+	{ "o", "j", "e", "" },
+	{ "o", "N", "K", "" },
+	{ "o", "n", "j", "" },
+	{ "o", "E", "J", "" },
+	{ "o", "e", "l", "" },
+	{ "o", "K", "Nzz", "" }, -- Also centers the text
+	{ "o", "k", "nzz", "" }, -- Also centers the text
+	{ "o", "l", "k", "" },
 }
 -- Apply the remappings
 for _, mapping in ipairs(remappings) do

@@ -90,7 +90,7 @@ return {
 				},
 			},
 			lua_ls = {},
-			harper_ls = {},
+			-- harper_ls = {},
 			html = {},
 			omnisharp = {},
 			eslint = {},
