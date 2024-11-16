@@ -90,10 +90,10 @@ return {
 				},
 			},
 			lua_ls = {},
-			-- harper_ls = {},
 			html = {},
 			omnisharp = {},
 			eslint = {},
+			eslint_d = {},
 		}
 
 		local ensure_installed = vim.tbl_keys(servers)
