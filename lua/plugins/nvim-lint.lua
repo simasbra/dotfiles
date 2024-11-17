@@ -20,8 +20,8 @@ return {
 			end,
 		})
 
-		vim.keymap.set("n", "<leader>fl", function()
+		vim.keymap.set("n", "<leader>tl", function()
 			lint.try_lint()
-		end, { desc = "[F]ormat [l]int" })
+		end, { desc = "[T]oggle [l]int" })
 	end,
 }

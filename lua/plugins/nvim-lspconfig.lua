@@ -76,26 +76,26 @@ return {
 		--  - settings (table): Override the default settings passed when initializing the server.
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
+			-- Language Server
 			clangd = {},
-			codespell = {},
-			cpptools = {},
-			pylsp = {
-				settings = {
-					pylsp = {
-						plugins = {
-							pycodestyle = { maxLineLength = 120 },
-							flake8 = { maxLineLength = 120 },
-							pylint = {},
-						},
-					},
-				},
-			},
-			black = {},
-			lua_ls = {},
-			html = {},
-			omnisharp = {},
+			cssls = {},
 			eslint = {},
+			gopls = {},
+			html = {},
+			intelephense = {},
+			jsonls = {},
+			lua_ls = {},
+			omnisharp = {},
+			pylsp = {},
+
+			-- Linters
 			eslint_d = {},
+			pylint = {},
+
+			-- Formatters
+			black = {},
+			prettier = {},
+			stylua = {},
 		}
 
 		local ensure_installed = vim.tbl_keys(servers)
