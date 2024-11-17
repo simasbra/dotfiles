@@ -86,14 +86,29 @@ return {
 			jsonls = {},
 			lua_ls = {},
 			omnisharp = {},
-			pylsp = {},
+			pylsp = {
+				settings = {
+					pylsp = {
+						plugins = {
+							pylint = {
+								enabled = true,
+								args = { "--rcfile=pyproject.toml" },
+							},
+							pyink = {
+								enabled = true,
+							},
+							pycodestyle = {
+								enabled = false,
+							},
+						},
+					},
+				},
+			},
 
 			-- Linters
 			eslint_d = {},
-			pylint = {},
 
 			-- Formatters
-			black = {},
 			prettier = {},
 			stylua = {},
 		}

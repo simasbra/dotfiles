@@ -5,7 +5,7 @@ local supported_formatters = {
 	css = { "prettier" },
 	json = { "prettier" },
 	markdown = { "prettier" },
-	python = { "black" },
+	python = { "pyink" },
 	lua = { "stylua" },
 }
 
