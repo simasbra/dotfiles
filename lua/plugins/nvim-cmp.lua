@@ -9,18 +9,18 @@ return {
 	},
 	config = function()
 		-- See `:help cmp`
-		local cmp = require "cmp"
+		local cmp = require("cmp")
 		local snippy = require("snippy")
 		snippy.setup({})
 
-		cmp.setup {
+		cmp.setup({
 			snippet = {
 				expand = function(args)
 					snippy.expand_snippet(args.body)
 				end,
 			},
 			completion = { completeopt = "menu,menuone,noinsert" },
-			mapping = cmp.mapping.preset.insert {
+			mapping = cmp.mapping.preset.insert({
 				-- Select the [n]ext item
 				["<C-n>"] = cmp.mapping.select_next_item(),
 				-- Select the [p]revious item
@@ -31,7 +31,7 @@ return {
 				["<C-f>"] = cmp.mapping.scroll_docs(4),
 
 				-- Accept ([y]es) the completion.
-				["<C-y>"] = cmp.mapping.confirm { select = true },
+				["<C-y>"] = cmp.mapping.confirm({ select = true }),
 
 				-- <c-e> will move you to the right of each of the expansion locations.
 				["<C-e>"] = cmp.mapping(function()
@@ -45,16 +45,16 @@ return {
 						snippy.previous()
 					end
 				end, { "i", "s" }),
-			},
+			}),
 			sources = {
 				{
 					name = "lazydev",
 					group_index = 0,
 				},
 				{ name = "nvim_lsp" },
-				{ name = 'snippy' },
+				{ name = "snippy" },
 				{ name = "path" },
 			},
-		}
+		})
 	end,
 }

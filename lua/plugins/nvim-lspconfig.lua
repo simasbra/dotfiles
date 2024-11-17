@@ -50,7 +50,7 @@ return {
 						group = vim.api.nvim_create_augroup("kickstart-lsp-detach", { clear = true }),
 						callback = function(event2)
 							vim.lsp.buf.clear_references()
-							vim.api.nvim_clear_autocmds { group = "kickstart-lsp-highlight", buffer = event2.buf }
+							vim.api.nvim_clear_autocmds({ group = "kickstart-lsp-highlight", buffer = event2.buf })
 						end,
 					})
 				end
@@ -59,7 +59,7 @@ return {
 				-- code, if the language server you are using supports them
 				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
 					map("<leader>th", function()
-						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
+						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = event.buf }))
 					end, "[T]oggle Inlay [H]ints")
 				end
 			end,
@@ -85,10 +85,12 @@ return {
 						plugins = {
 							pycodestyle = { maxLineLength = 120 },
 							flake8 = { maxLineLength = 120 },
+							pylint = {},
 						},
 					},
 				},
 			},
+			black = {},
 			lua_ls = {},
 			html = {},
 			omnisharp = {},
@@ -99,8 +101,8 @@ return {
 		local ensure_installed = vim.tbl_keys(servers)
 
 		require("mason").setup()
-		require("mason-tool-installer").setup { ensure_installed = ensure_installed }
-		require("mason-lspconfig").setup {
+		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+		require("mason-lspconfig").setup({
 			handlers = {
 				function(server_name)
 					local server = servers[server_name] or {}
@@ -110,6 +112,6 @@ return {
 					require("lspconfig")[server_name].setup(server)
 				end,
 			},
-		}
+		})
 	end,
 }

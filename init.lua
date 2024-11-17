@@ -30,7 +30,8 @@ local plugins = {
 	require("plugins.nvim-cmp"),
 	require("plugins.nvim-autopairs"),
 	require("plugins.oil"),
-	require("plugins.conform")
+	require("plugins.conform"),
+	require("plugins.nvim-lint"),
 }
 
 local options = {}
