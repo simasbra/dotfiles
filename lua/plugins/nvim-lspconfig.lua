@@ -76,15 +76,9 @@ return {
 		--  - settings (table): Override the default settings passed when initializing the server.
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
-			-- Language Server
 			clangd = {},
-			cssls = {},
-			eslint = {},
-			gopls = {},
-			html = {},
-			intelephense = {},
-			jsonls = {},
 			lua_ls = {},
+			stylua = {},
 			omnisharp = {},
 			pylsp = {
 				settings = {
@@ -94,23 +88,30 @@ return {
 								enabled = true,
 								args = { "--rcfile=pyproject.toml" },
 							},
-							pyink = {
-								enabled = true,
-							},
-							pycodestyle = {
-								enabled = false,
-							},
+							pycodestyle = { enabled = false },
+							mccabe = { enabled = false },
+							pyflakes = { enabled = false },
 						},
 					},
 				},
 			},
-
-			-- Linters
-			eslint_d = {},
-
-			-- Formatters
-			prettier = {},
-			stylua = {},
+			pyink = { enabled = true },
+			html = {},
+			cssls = {},
+			jsonls = {},
+			ts_ls = {},
+			eslint = {
+				settings = {
+					eslint = {
+						autoFixOnSave = true,
+						packageManager = "yarn",
+						workingDirectories = { mode = "auto" },
+						-- experimental = {
+						-- 	useFlatConfig = true,
+						-- },
+					},
+				},
+			},
 		}
 
 		local ensure_installed = vim.tbl_keys(servers)

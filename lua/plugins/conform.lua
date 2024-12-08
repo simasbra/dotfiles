@@ -1,38 +1,29 @@
-local supported_formatters = {
-	javascript = { "prettier" },
-	javascriptreact = { "prettier" },
-	html = { "prettier" },
-	css = { "prettier" },
-	json = { "prettier" },
-	markdown = { "prettier" },
-	python = { "pyink" },
-	lua = { "stylua" },
-}
-
 return {
 	"stevearc/conform.nvim",
 	opts = {},
-	keys = {
-		{
-			"<leader>fb",
-			function()
-				local filetype = vim.bo.filetype
-				if supported_formatters[filetype] then
-					require("conform").format({ async = true, lsp_format = "fallback" })
-				else
-					vim.notify("No formatter configured for this file type")
-				end
-			end,
-			mode = "",
-			desc = "[F]ormat [b]uffer",
-		},
-	},
 	config = function()
 		-- Convert supported_formatters keys to a set for enabled_filetypes
+		local supported_formatters = {
+			javascript = { "eslint" },
+			javascriptreact = { "eslint" },
+			typescript = { "eslint" },
+			typescriptreact = { "eslint" },
+			json = { "eslint" },
+			html = { "prettier" },
+			css = { "prettier" },
+			markdown = { "prettier" },
+			python = { "pyink" },
+			lua = { "stylua" },
+			c = { "clang-format", "clang" },
+			h = { "clang-format", "clang" },
+			cpp = { "clang-format", "clang" },
+		}
+
 		local enabled_filetypes = {}
 		for ft, _ in pairs(supported_formatters) do
 			enabled_filetypes[ft] = true
 		end
+
 		require("conform").setup({
 			-- Map of filetype to formatters
 			formatters_by_ft = supported_formatters,
@@ -130,6 +121,14 @@ return {
 					append_args = { "--trailing-comma" },
 				},
 			},
+			vim.keymap.set("n", "<leader>fb", function()
+				local filetype = vim.bo.filetype
+				if supported_formatters[filetype] then
+					require("conform").format({ async = true, lsp_format = "fallback" })
+				else
+					vim.notify("No formatter configured for this file type")
+				end
+			end, { desc = "[f]ormat [b]uffer" }),
 		})
 	end,
 }
