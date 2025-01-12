@@ -97,7 +97,6 @@ return {
 			},
 			pyink = { enabled = true },
 			html = {},
-			cssls = {},
 			jsonls = {},
 			ts_ls = {},
 			eslint = {
