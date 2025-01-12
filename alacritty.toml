@@ -1,0 +1,17 @@
+[general]
+import = [ "~/.config/alacritty/themes/themes/nightfox.toml"]
+
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+title = "Terminal"
+
+[font]
+normal = { family = "JetBrainsMonoNL Nerd Font", style = "Medium" }
+bold = { family = "JetBrainsMonoNL Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMonoNL Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMonoNL Nerd Font", style = "Bold Italic" }
+size = 24.0
+
+[colors.primary]
+background = "#000000"
