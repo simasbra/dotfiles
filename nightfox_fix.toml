@@ -1,0 +1,14 @@
+[colors.primary]
+background = "#000000"
+[colors.footer_bar]
+background = "#29394f"
+[colors.hints.end]
+background = "#29394f"
+[colors.selection]
+background = "#2b3b51"
+[colors.search.matches]
+background = "#3c5372"
+[colors.normal]
+black = "#000000"
+[colors.bright]
+black = "#222f41"
