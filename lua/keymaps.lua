@@ -38,25 +38,25 @@ local remappings = {
 	{ "n", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
 	{ "n", "l", "k", "Up (swap k)" },
 	-- Visual mode
-	{ "v", "J", "E", "" },
-	{ "v", "j", "e", "" },
-	{ "v", "N", "K", "" },
-	{ "v", "n", "j", "" },
-	{ "v", "E", "J", "" },
-	{ "v", "e", "l", "" },
-	{ "v", "K", "Nzz", "" }, -- Also centers the text
-	{ "v", "k", "nzz", "" }, -- Also centers the text
-	{ "v", "l", "k", "" },
+	{ "v", "J", "E", "Jump end WORD (swap E)" },
+	{ "v", "j", "e", "Jump end word (swap e)" },
+	{ "v", "N", "K", "Help (swap K)" },
+	{ "v", "n", "j", "Down (swap j)" },
+	{ "v", "E", "J", "Join lines (swap J)" },
+	{ "v", "e", "l", "Right (swap l)" },
+	{ "v", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
+	{ "v", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "v", "l", "k", "Up (swap k)" },
 	-- Operator pending mode
-	{ "o", "J", "E", "" },
-	{ "o", "j", "e", "" },
-	{ "o", "N", "K", "" },
-	{ "o", "n", "j", "" },
-	{ "o", "E", "J", "" },
-	{ "o", "e", "l", "" },
-	{ "o", "K", "Nzz", "" }, -- Also centers the text
-	{ "o", "k", "nzz", "" }, -- Also centers the text
-	{ "o", "l", "k", "" },
+	{ "o", "J", "E", "Jump end WORD (swap E)" },
+	{ "o", "j", "e", "Jump end word (swap e)" },
+	{ "o", "N", "K", "Help (swap K)" },
+	{ "o", "n", "j", "Down (swap j)" },
+	{ "o", "E", "J", "Join lines (swap J)" },
+	{ "o", "e", "l", "Right (swap l)" },
+	{ "o", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
+	{ "o", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "o", "l", "k", "Up (swap k)" },
 }
 -- Apply the remappings
 for _, mapping in ipairs(remappings) do
