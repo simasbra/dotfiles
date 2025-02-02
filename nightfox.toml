@@ -41,7 +41,7 @@ text = "#cdcecf"
 background = "#222f41"
 
 [colors.normal]
-black = "#393b44"
+black = "#000000"
 red = "#c94f6d"
 green = "#81b29a"
 yellow = "#dbc074"
@@ -61,7 +61,7 @@ cyan = "#7ad5d6"
 white = "#e4e4e5"
 
 [colors.dim]
-black = "#000000"
+black = "#111720"
 red = "#ab435d"
 green = "#6e9783"
 yellow = "#baa363"
