@@ -44,18 +44,16 @@ local remappings = {
 	{ "v", "n", "j", "Down (swap j)" },
 	{ "v", "E", "J", "Join lines (swap J)" },
 	{ "v", "e", "l", "Right (swap l)" },
-	{ "v", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
-	{ "v", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "v", "K", "Nzz", "Previous find (swap N)" },
+	{ "v", "k", "nzz", "Next find (swap n)" },
 	{ "v", "l", "k", "Up (swap k)" },
 	-- Operator pending mode
 	{ "o", "J", "E", "Jump end WORD (swap E)" },
 	{ "o", "j", "e", "Jump end word (swap e)" },
-	{ "o", "N", "K", "Help (swap K)" },
 	{ "o", "n", "j", "Down (swap j)" },
-	{ "o", "E", "J", "Join lines (swap J)" },
 	{ "o", "e", "l", "Right (swap l)" },
-	{ "o", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
-	{ "o", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "o", "K", "Nzz", "Previous find (swap N)" },
+	{ "o", "k", "nzz", "Next find (swap n)" },
 	{ "o", "l", "k", "Up (swap k)" },
 }
 -- Apply the remappings
