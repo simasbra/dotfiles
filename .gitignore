@@ -7,3 +7,4 @@
 
 # But ignore these...
 zsh/.zhistory
+zsh/.zcompdump
