@@ -6,6 +6,7 @@
 !README
 !zsh
 !nvim
+!git
 
 # But ignore these...
 zsh/.zhistory
