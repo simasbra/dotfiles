@@ -1,0 +1,76 @@
+let mapleader = " "
+let maplocalleader = " "
+
+set number
+set relativenumber
+
+set mouse=a
+
+set showmode=false
+
+set clipboard=unnamedplus
+
+set breakindent
+
+set undofile
+
+set ignorecase
+set smartcase
+
+set signcolumn=yes
+
+set updatetime=250
+
+set timeoutlen=300
+
+set splitright
+set splitbelow
+
+set list
+set listchars=tab:»\ ,trail:·,nbsp:␣
+
+set inccommand=split
+
+set cursorline
+
+set scrolloff=10
+
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
+set noexpandtab
+
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Window remappings
+nnoremap <C-w>h <C-w>h
+nnoremap <C-w>n <C-w>j
+nnoremap <C-w>l <C-w>k
+nnoremap <C-w>e <C-w>l
+nnoremap <C-w><C-h> <C-w>h
+nnoremap <C-w><C-n> <C-w>j
+nnoremap <C-w><C-l> <C-w>k
+nnoremap <C-w><C-e> <C-w>l
+
+" Control remappings
+noremap J E
+noremap j e
+noremap N K
+noremap n j
+noremap E J
+noremap e l
+noremap K Nzz
+noremap k nzz
+noremap l k
+
+" If controls are messed up, use this
+noremap J Eh
+noremap j eh
+noremap N K
+noremap n jh
+noremap E J
+noremap e lh
+noremap K Nzz
+noremap k nzz
+noremap l kh
