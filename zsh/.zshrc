@@ -20,10 +20,10 @@ bindkey -M vicmd "J" forward-word         # Swap J with E
 bindkey -M vicmd "j" vi-forward-word      # Swap j with e
 bindkey -M vicmd "N" run-help             # Swap N with K
 bindkey -M vicmd "n" down-line-or-history # Swap n with j
-bindkey -M vicmd "E" vi-join              # Swap E with J
+# bindkey -M vicmd "E" vi-join              # Swap E with J
 bindkey -M vicmd "e" forward-char         # Swap e with l
-bindkey -M vicmd "K" search-backward      # Swap K with N
-bindkey -M vicmd "k" search-forward       # Swap k with n
+# bindkey -M vicmd "K" search-backward      # Swap K with N
+# bindkey -M vicmd "k" search-forward       # Swap k with n
 bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 
 # change cursor depending on mode (visual vs normal)

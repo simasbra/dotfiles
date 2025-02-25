@@ -4,3 +4,6 @@
 # But not these...
 !.gitignore
 !zsh
+
+# But ignore these...
+zsh/.zhistory
