@@ -4,6 +4,7 @@
 # But not these...
 !.gitignore
 !zsh
+!nvim
 
 # But ignore these...
 zsh/.zhistory
