@@ -17,7 +17,7 @@ return {
 		-- See `:help nvim-treesitter`
 
 		---@diagnostic disable-next-line: missing-fields
-		require("nvim-treesitter.install").compilers = { "zig", "clang" }
+		require("nvim-treesitter.install").compilers = { "gcc", "clang", "zig" }
 		require("nvim-treesitter.configs").setup(opts)
 
 		-- Override `.h` files to be treated as `c` files
