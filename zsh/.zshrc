@@ -56,3 +56,5 @@ fpath+=($HOME/.config/zsh/pure)
 autoload -U promptinit; promptinit
 prompt pure
 
+# Alacritty completions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
