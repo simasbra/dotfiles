@@ -8,6 +8,7 @@
 !nvim
 !git
 !alacritty
+!tmux
 
 # But ignore these...
 zsh/.zhistory
