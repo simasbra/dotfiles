@@ -19,3 +19,6 @@ export SAVEHIST=10000
 # lsmu development
 export HOMEPATH="/home/simas"
 export ENVIRONMENT="Development"
+
+# git
+export GIT_CONFIG_GLOBAL="/home/simas/.config/git/.gitconfig"
