@@ -10,6 +10,7 @@
 !alacritty
 !tmux
 !tidal_dl_ng
+!ideavim
 
 # But ignore these...
 zsh/.zhistory

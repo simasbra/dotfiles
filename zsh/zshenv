@@ -17,7 +17,7 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 
 # lsmu development
-export HOMEPATH="/home/simas"
+export HOMEPATH="/home/simas/Documents/LSMU"
 export ENVIRONMENT="Development"
 
 # git
@@ -26,4 +26,14 @@ export GIT_CONFIG_GLOBAL="/home/simas/.config/git/.gitconfig"
 # python shit
 export PATH="$PATH:/home/simas/.local/bin"
 
+# rider and other c# stuff
 export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
+export NUGET_PACKAGES="$HOME/.config/nuget"
+export DOTNET_CLI_HOME="$HOME/.config/dotnet"
+
+# docker
+export DOCKER_CONFIG="$HOME/.config/docker"
+
+# node
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
