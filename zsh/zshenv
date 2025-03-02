@@ -22,3 +22,8 @@ export ENVIRONMENT="Development"
 
 # git
 export GIT_CONFIG_GLOBAL="/home/simas/.config/git/.gitconfig"
+
+# python shit
+export PATH="$PATH:/home/simas/.local/bin"
+
+export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
