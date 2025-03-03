@@ -2,12 +2,11 @@
 
 # auto complete
 autoload -U compinit; compinit
-# with hidden files
-_comp_options+=(globdots)
+_comp_options+=(globdots) # with hidden files
+
 # case insensitive path completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-z}={A-Za-z}'
 zstyle ':completion:*' menu select
-
 
 # vim motions
 bindkey -v
@@ -20,33 +19,6 @@ bindkey -M vicmd "N" run-help             # Swap N with K
 bindkey -M vicmd "n" down-line-or-history # Swap n with j
 bindkey -M vicmd "e" forward-char         # Swap e with l
 bindkey -M vicmd "l" up-line-or-history   # Swap l with k
-
-# # change cursor depending on mode (visual vs normal)
-# cursor_mode() {
-#     # See https://ttssh2.osdn.jp/manual/4/en/usage/tips/vim.html for cursor shapes
-#     cursor_block='\e[2 q'
-#     cursor_beam='\e[6 q'
-#
-#     function zle-keymap-select {
-#         if [[ ${KEYMAP} == vicmd ]] ||
-#             [[ $1 = 'block' ]]; then
-#             echo -ne $cursor_block
-#         elif [[ ${KEYMAP} == main ]] ||
-#             [[ ${KEYMAP} == viins ]] ||
-#             [[ ${KEYMAP} = '' ]] ||
-#             [[ $1 = 'beam' ]]; then
-#             echo -ne $cursor_beam
-#         fi
-#     }
-#
-#     zle-line-init() {
-#         echo -ne $cursor_beam
-#     }
-#
-#     zle -N zle-keymap-select
-#     zle -N zle-line-init
-# }
-# cursor_mode
 
 # syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

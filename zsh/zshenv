@@ -52,3 +52,6 @@ export STEAM_RUNTIME="$XDG_DATA_HOME/steam/runtime"
 
 # gnupg
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+
+# tmux
+export TERM=xterm-256color
