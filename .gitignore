@@ -11,6 +11,7 @@
 !tmux
 !tidal_dl_ng
 !ideavim
+!deadbeef
 
 # But ignore these...
 zsh/.zhistory
