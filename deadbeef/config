@@ -20,7 +20,7 @@ filebrowser.bgcolor_selected
 filebrowser.bookmarks_file $HOME/.config/gtk-3.0/bookmarks
 filebrowser.coverart_files cover.jpg;folder.jpg;front.jpg
 filebrowser.coverart_size 24
-filebrowser.defaultpath ~/Music
+filebrowser.defaultpath /home/simas/Music
 filebrowser.enabled 1
 filebrowser.expanded_rows 
 filebrowser.fgcolor 
@@ -38,14 +38,24 @@ filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
 filechooser.lastdir file:///home/simas/Music
-gtkui.color.listview_even_row 6871 6871 6871
+gtkui.color.listview_even_row 6425 8995 12336
+gtkui.color.listview_odd_row 8481 11822 16191
+gtkui.color.listview_selected_text 10537 14649 20303
+gtkui.color.listview_selection 52685 52942 53199
+gtkui.color.listview_text 54998 54998 55255
+gtkui.color.tabstrip_base 279 279 0
+gtkui.color.tabstrip_dark 0 0 0
 gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"274","align":"2","color_override":"0","color":"#ff000000"},{"title":"Track Number","id":"-1","format":"%tracknumber%","sort_format":"","size":"71","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"303","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"345","align":"0","color_override":"0","color":"#ff000000"},{"title":"Album","id":"-1","format":"%album%","sort_format":"","size":"281","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"81","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.embolden_current_track 1
 gtkui.eq.visible 0
+gtkui.font.listview_text Cantarell 12
+gtkui.font.tabstrip_text Cantarell 12
+gtkui.italic_current_track 0
 gtkui.layout.1.9.0 {"type":"vsplitter","legacy_params":" locked=0 ratio=0.969766 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.757031 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.230134 pos=0 size2=0","children":[{"type":"filebrowser"},{"type":"tabbed_playlist","legacy_params":" hideheaders=0 width=1486"}]},{"type":"vsplitter","legacy_params":" locked=0 ratio=0.500000 pos=0 size2=0","children":[{"type":"coverart","settings":{"mode":"selected"}},{"type":"selproperties","settings":{"section":"properties,metadata","showheaders":"0"}}]}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.090625 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.318584 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"playtb"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.930233 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.016113 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"seekbar"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.702899 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.363636 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"volumebar","settings":{"scale":"db"}}]},{"type":"placeholder"}]}]}]}]}
 gtkui.override_bar_colors 0
 gtkui.override_listview_colors 0
+gtkui.override_tabstrip_colors 0
 gtkui.playlist.group_by_tf %album%
 gtkui.search.group_by_tf 
 gtkui.sortby_fmt_v2 %album% %track number% 
@@ -54,6 +64,7 @@ gtkui.statusbar.visible 1
 gtkui.tabscroll 0
 gtkui.titlebar_playing_tf DeaDBeeF - %artist% - %title%
 gtkui.titlebar_stopped_tf DeaDBeeF
+gtkui.vis.use_custom_base_color 0
 hotkey.key01 "Ctrl f" 0 0 find
 hotkey.key02 "Ctrl o" 0 0 open_files
 hotkey.key03 "Ctrl q" 0 0 quit
@@ -100,21 +111,21 @@ output_plugin alsa
 playback.loop 1
 playback.volume.normalized 0.9139817
 playlist.current 0
-playlist.cursor.0 13
+playlist.cursor.0 0
 playlist.cursor.1 0
 playlist.pin.groups 1
-playlist.scroll.0 298
+playlist.scroll.0 0
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 Albums
+playlist.tab.00000 New Playlist
 prefwin.geometry.h 596
 prefwin.geometry.w 706
-prefwin.geometry.x 769
-prefwin.geometry.y 416
-resume.paused 1
+prefwin.geometry.x 909
+prefwin.geometry.y 555
+resume.paused 0
 resume.playlist 0
-resume.position 5.9443064
-resume.track 13
+resume.position 0.0142188
+resume.track 3
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100

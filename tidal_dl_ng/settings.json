@@ -16,7 +16,7 @@
     "path_binary_ffmpeg": "/usr/bin/ffmpeg",
     "metadata_cover_dimension": "1280",
     "metadata_cover_embed": true,
-    "cover_album_file": true,
+    "cover_album_file": false,
     "extract_flac": true,
     "downloads_simultaneous_per_track_max": 20,
     "download_delay_sec_min": 3.0,
