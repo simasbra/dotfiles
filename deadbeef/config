@@ -117,15 +117,15 @@ playlist.pin.groups 1
 playlist.scroll.0 0
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
-playlist.tab.00000 New Playlist
+playlist.tab.00000 Albums
 prefwin.geometry.h 596
 prefwin.geometry.w 706
 prefwin.geometry.x 909
 prefwin.geometry.y 555
 resume.paused 0
 resume.playlist 0
-resume.position 0.0142188
-resume.track 3
+resume.position 0.0000000
+resume.track 59
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
