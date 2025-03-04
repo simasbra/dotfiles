@@ -38,33 +38,43 @@ filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
 filechooser.lastdir file:///home/simas/Music
-gtkui.color.listview_even_row 6425 8995 12336
-gtkui.color.listview_odd_row 8481 11822 16191
-gtkui.color.listview_selected_text 10537 14649 20303
-gtkui.color.listview_selection 52685 52942 53199
-gtkui.color.listview_text 54998 54998 55255
-gtkui.color.tabstrip_base 279 279 0
-gtkui.color.tabstrip_dark 0 0 0
-gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"274","align":"2","color_override":"0","color":"#ff000000"},{"title":"Track Number","id":"-1","format":"%tracknumber%","sort_format":"","size":"71","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"303","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"345","align":"0","color_override":"0","color":"#ff000000"},{"title":"Album","id":"-1","format":"%album%","sort_format":"","size":"281","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"81","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.action_separators 0
+gtkui.autoresize_columns 1
+gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"274","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"54","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"369","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"665","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"97","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.custom_tray_icon deadbeef_tray_icon
+gtkui.delete_files_ask 1
+gtkui.disable_seekbar_overlay 0
 gtkui.embolden_current_track 1
 gtkui.eq.visible 0
 gtkui.font.listview_text Cantarell 12
 gtkui.font.tabstrip_text Cantarell 12
+gtkui.hide_remove_from_disk 1
+gtkui.hide_tray_icon 0
 gtkui.italic_current_track 0
-gtkui.layout.1.9.0 {"type":"vsplitter","legacy_params":" locked=0 ratio=0.969766 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.757031 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.230134 pos=0 size2=0","children":[{"type":"filebrowser"},{"type":"tabbed_playlist","legacy_params":" hideheaders=0 width=1486"}]},{"type":"vsplitter","legacy_params":" locked=0 ratio=0.500000 pos=0 size2=0","children":[{"type":"coverart","settings":{"mode":"selected"}},{"type":"selproperties","settings":{"section":"properties,metadata","showheaders":"0"}}]}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.090625 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.318584 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"playtb"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.930233 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.016113 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"seekbar"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.702899 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.363636 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"volumebar","settings":{"scale":"db"}}]},{"type":"placeholder"}]}]}]}]}
+gtkui.layout.1.9.0 {"type":"vsplitter","legacy_params":" locked=0 ratio=0.969766 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.757031 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.230134 pos=0 size2=0","children":[{"type":"filebrowser"},{"type":"tabbed_playlist","legacy_params":" hideheaders=0 width=1113"}]},{"type":"vsplitter","legacy_params":" locked=0 ratio=0.500000 pos=0 size2=0","children":[{"type":"coverart","settings":{"mode":"selected"}},{"type":"selproperties","settings":{"section":"properties,metadata","showheaders":"0"}}]}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.090625 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.318584 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"playtb"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.930233 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.016113 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"seekbar"}]},{"type":"hsplitter","legacy_params":" locked=0 ratio=0.702899 pos=0 size2=0","children":[{"type":"hsplitter","legacy_params":" locked=0 ratio=0.363636 pos=0 size2=0","children":[{"type":"placeholder"},{"type":"volumebar","settings":{"scale":"db"}}]},{"type":"placeholder"}]}]}]}]}
+gtkui.mmb_delete_playlist 0
 gtkui.override_bar_colors 0
 gtkui.override_listview_colors 0
 gtkui.override_tabstrip_colors 0
 gtkui.playlist.group_by_tf %album%
+gtkui.refresh_rate 10
 gtkui.search.group_by_tf 
 gtkui.sortby_fmt_v2 %album% %album artist% %discnumber% $num(%track number%,4)
 gtkui.sortby_order 0
+gtkui.start_hidden 0
 gtkui.statusbar.visible 1
+gtkui.statusbar_seltime 0
 gtkui.tabscroll 0
+gtkui.tabstrip_embolden_playing 0
+gtkui.tabstrip_embolden_selected 0
 gtkui.titlebar_playing_tf DeaDBeeF - %artist% - %title%
 gtkui.titlebar_stopped_tf DeaDBeeF
+gtkui.tray_volume_sensitivity 1
+gtkui.unicode_playstate 0
+gtkui.vis.use_custom_background_color 0
 gtkui.vis.use_custom_base_color 0
+gui_plugin GTK3
 hotkey.key01 "Ctrl f" 0 0 find
 hotkey.key02 "Ctrl o" 0 0 open_files
 hotkey.key03 "Ctrl q" 0 0 quit
@@ -101,32 +111,34 @@ logwindow.geometry.h 751
 logwindow.geometry.w 732
 logwindow.geometry.x 41
 logwindow.geometry.y 40
-mainwin.geometry.h 1371
-mainwin.geometry.maximized 0
-mainwin.geometry.w 2560
-mainwin.geometry.x 0
-mainwin.geometry.y 69
+mainwin.geometry.h 1019
+mainwin.geometry.maximized 1
+mainwin.geometry.w 1920
+mainwin.geometry.x 26
+mainwin.geometry.y 23
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
 playback.volume.normalized 0.9139817
 playlist.current 0
-playlist.cursor.0 0
+playlist.cursor.0 37
 playlist.cursor.1 0
+playlist.groups.spacing 8
 playlist.pin.groups 1
 playlist.scroll.0 0
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Albums
 prefwin.geometry.h 596
-prefwin.geometry.w 706
-prefwin.geometry.x 909
-prefwin.geometry.y 555
-resume.paused 1
+prefwin.geometry.w 761
+prefwin.geometry.x 26
+prefwin.geometry.y 23
+resume.paused 0
 resume.playlist 0
-resume.position 74.477584
-resume.track 26
+resume.position 0.0000000
+resume.track 57
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
 streamer.samplerate_mult_48 48000
+tkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"274","align":"2","color_override":"0","color":"#ff000000"},{"title":"Track Number","id":"-1","format":"%tracknumber%","sort_format":"","size":"71","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"304","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"346","align":"0","color_override":"0","color":"#ff000000"},{"title":"Album","id":"-1","format":"%album%","sort_format":"","size":"282","align":"0","color_override":"0","color":"#ff2e3436"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"81","align":"0","color_override":"0","color":"#ff000000"}]
