@@ -30,7 +30,7 @@ return {
 		-- See `:help telescope` and `:help telescope.setup()`
 		require("telescope").setup({
 			defaults = {
-				file_ignore_patterns = { "node_modules", "obj" },
+				file_ignore_patterns = { "node_modules", "obj", "bin" },
 			},
 			-- pickers = {}
 			extensions = {

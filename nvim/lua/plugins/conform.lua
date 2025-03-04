@@ -4,19 +4,19 @@ return {
 	config = function()
 		-- Convert supported_formatters keys to a set for enabled_filetypes
 		local supported_formatters = {
-			javascript = { "eslint" },
-			javascriptreact = { "eslint" },
-			typescript = { "eslint" },
-			typescriptreact = { "eslint" },
-			json = { "eslint" },
+			javascript = { "prettier" },
+			javascriptreact = { "prettier" },
+			typescript = { "prettier" },
+			typescriptreact = { "prettier" },
+			json = { "prettier" },
 			html = { "prettier" },
 			css = { "prettier" },
 			markdown = { "prettier" },
 			python = { "pyink" },
 			lua = { "stylua" },
-			c = { "clang-format", "clang" },
-			h = { "clang-format", "clang" },
-			cpp = { "clang-format", "clang" },
+			c = { "clang-format" },
+			h = { "clang-format" },
+			cpp = { "clang-format" },
 		}
 
 		local enabled_filetypes = {}

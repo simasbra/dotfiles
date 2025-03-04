@@ -28,21 +28,23 @@ export PYTHON_USER_BASE="$XDG_DATA_HOME/python"
 export PATH="$PYTHON_USER_BASE/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 
-# rider and other c# stuff
+# rider
 export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
-export NUGET_PACKAGES="$XDG_DATA_HOME/nuget"
-export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet"
-export DOTNET_ROOT="$XDG_DATA_HOME/dotnet"
+
+# dotnet and c# stuff
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages 
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export OMNISHARPHOME="$XDG_CONFIG_HOME/omnisharp"
 
 # docker
-export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
-export DOCKER_DATA_ROOT="$XDG_DATA_HOME/docker"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker 
+export MACHINE_STORAGE_PATH="$XDG_DATA_HOME"/docker-machine
 
 # node
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-export NPM_CONFIG_USERCONFIG="$HOME/.config/npm"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm"
+export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 
 # steam
 export STEAM_HOME="$XDG_DATA_HOME/steam"
@@ -53,5 +55,11 @@ export STEAM_RUNTIME="$XDG_DATA_HOME/steam/runtime"
 # gnupg
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
-# tmux
-export TERM=xterm-256color
+# java
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
+# wget
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
+
+# discord
+export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
