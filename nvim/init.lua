@@ -24,7 +24,9 @@ local plugins = {
 	require("plugins.gitsigns"),
 	require("plugins.lualine"),
 	require("plugins.luvit-meta"),
+	-- navigation
 	require("plugins.oil"),
+	require("plugins.undotree"),
 	-- lsp stuff
 	require("plugins.lazydev"),
 	require("plugins.nvim-lspconfig"),
