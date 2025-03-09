@@ -32,7 +32,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
 
 # dotnet and c# stuff
-export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages 
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export OMNISHARPHOME="$XDG_CONFIG_HOME/omnisharp"
 

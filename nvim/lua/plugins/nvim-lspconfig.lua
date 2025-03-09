@@ -98,20 +98,19 @@ return {
 			},
 			pyink = { enabled = true },
 			html = {},
-			jsonls = {},
 			ts_ls = {},
-			eslint = {
-				settings = {
-					eslint = {
-						autoFixOnSave = true,
-						packageManager = "yarn",
-						workingDirectories = { mode = "auto" },
-						-- experimental = {
-						-- 	useFlatConfig = true,
-						-- },
-					},
-				},
-			},
+			-- eslint = {
+			-- 	settings = {
+			-- 		eslint = {
+			-- 			autoFixOnSave = true,
+			-- 			packageManager = "yarn",
+			-- 			workingDirectories = { mode = "auto" },
+			-- 			-- experimental = {
+			-- 			-- 	useFlatConfig = true,
+			-- 			-- },
+			-- 		},
+			-- 	},
+			-- },
 		}
 
 		local ensure_installed = vim.tbl_keys(servers)

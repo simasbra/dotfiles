@@ -17,6 +17,7 @@ return {
 			c = { "clang-format" },
 			h = { "clang-format" },
 			cpp = { "clang-format" },
+			cs = { "csharpier" },
 		}
 
 		local enabled_filetypes = {}

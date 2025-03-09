@@ -12,6 +12,8 @@
 !tidal_dl_ng
 !ideavim
 !deadbeef/config
+!i3
+
 
 # But ignore these...
 zsh/.zhistory
