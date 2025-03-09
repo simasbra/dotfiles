@@ -30,5 +30,7 @@ return {
 				},
 			},
 		})
+
+		vim.cmd.colorscheme("nightfox")
 	end,
 }

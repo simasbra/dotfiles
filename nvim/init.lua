@@ -17,25 +17,28 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+	-- search, ui and other stuff
 	require("plugins.telescope"),
-	require("plugins.nightfox"),
+	require("plugins.which-key"),
 	require("plugins.vim-sleuth"),
 	require("plugins.gitsigns"),
-	require("plugins.which-key"),
 	require("plugins.lualine"),
-	require("plugins.lazydev"),
 	require("plugins.luvit-meta"),
+	require("plugins.oil"),
+	-- lsp stuff
+	require("plugins.lazydev"),
 	require("plugins.nvim-lspconfig"),
 	require("plugins.nvim-treesitter"),
 	require("plugins.nvim-cmp"),
 	require("plugins.nvim-autopairs"),
-	require("plugins.oil"),
+	-- formatting and lint
 	require("plugins.conform"),
 	require("plugins.nvim-lint"),
+	-- themes
+	-- require("plugins.nightfox"),
+	require("plugins.kanagawa"),
 }
 
 local options = {}
 
 require("lazy").setup(plugins, options)
-
-vim.cmd.colorscheme("nightfox")
