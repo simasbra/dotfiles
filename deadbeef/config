@@ -40,7 +40,7 @@ filebrowser.treelines 0
 filechooser.lastdir file:///home/simas/Music
 gtkui.action_separators 0
 gtkui.autoresize_columns 1
-gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"288","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"57","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"388","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"698","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"102","align":"0","color_override":"0","color":"#ff000000"}]
+gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"293","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"63","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"381","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"572","align":"0","color_override":"0","color":"#ffeeeeec"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"81","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.columns.search [{"title":"Artist / Album","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)[ - %album%]","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Track No","id":"-1","format":"%tracknumber%","sort_format":"","size":"50","align":"1","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"150","align":"0","color_override":"0","color":"#ff000000"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"50","align":"0","color_override":"0","color":"#ff000000"}]
 gtkui.custom_tray_icon deadbeef_tray_icon
 gtkui.delete_files_ask 1
@@ -109,13 +109,13 @@ hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
 hotkeys_created 1
 logwindow.geometry.h 751
 logwindow.geometry.w 732
-logwindow.geometry.x 41
-logwindow.geometry.y 40
+logwindow.geometry.x 0
+logwindow.geometry.y 0
 mainwin.geometry.h 1019
 mainwin.geometry.maximized 1
 mainwin.geometry.w 1920
-mainwin.geometry.x 26
-mainwin.geometry.y 23
+mainwin.geometry.x 0
+mainwin.geometry.y 0
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
@@ -131,12 +131,12 @@ playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Albums
 prefwin.geometry.h 596
 prefwin.geometry.w 761
-prefwin.geometry.x 26
-prefwin.geometry.y 23
-resume.paused 1
+prefwin.geometry.x 0
+prefwin.geometry.y 0
+resume.paused 0
 resume.playlist 0
-resume.position 251.74459
-resume.track 261
+resume.position 0.0142188
+resume.track 26
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
