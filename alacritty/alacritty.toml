@@ -1,6 +1,6 @@
 [general]
-# import = [ "~/.config/alacritty/nightfox.toml"]
-import = [ "~/.config/alacritty/kanagawa_wave.toml"]
+import = [ "~/.config/alacritty/nightfox.toml"]
+# import = [ "~/.config/alacritty/kanagawa_wave.toml"]
 
 [env]
 term = "xterm-265color"

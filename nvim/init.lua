@@ -37,8 +37,8 @@ local plugins = {
 	require("plugins.conform"),
 	require("plugins.nvim-lint"),
 	-- themes
-	-- require("plugins.nightfox"),
-	require("plugins.kanagawa"),
+	require("plugins.nightfox"),
+	-- require("plugins.kanagawa"),
 }
 
 local options = {}
