@@ -21,7 +21,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu tofi-run | xargs swaymsg exec --
+set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # Workspace names
 set $workspace1 1
@@ -51,7 +51,8 @@ output DP-1 resolution 3840x2160 scale 1.5
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-         before-sleep 'swaylock -f -c 000000'
+         before-sleep 'loginctl lock-session $XDG_SESSION_ID' \
+         lock 'playerctl -a pause; swaylock'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -103,10 +104,11 @@ input $mouse {
     bindsym $mod+Shift+x exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Suspend computer
-    bindsym $mod+Shift+s exec systemctl suspend
+    bindsym $mod+Shift+s exec swaylock -f -c 000000 && systemctl suspend
 
     # Lock computer
-    bindsym $mod+Shift+z exec swaylock --color "#000000"
+    bindsym $mod+Shift+z exec swaylock -f -c 000000
+
 
     # Move the currently focused window to the scratchpad.
     bindsym $mod+Shift+Delete move scratchpad
