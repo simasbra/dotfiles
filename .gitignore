@@ -14,7 +14,7 @@
 !deadbeef/config
 !i3
 !sway
-
+!tofi
 
 # But ignore these...
 zsh/.zhistory

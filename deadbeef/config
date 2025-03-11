@@ -119,6 +119,7 @@ mainwin.geometry.y 0
 network.proxy.port 8080
 output_plugin alsa
 playback.loop 1
+playback.order 0
 playback.volume.normalized 0.9139817
 playlist.current 0
 playlist.cursor.0 37
@@ -133,10 +134,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 761
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 0
+resume.paused 1
 resume.playlist 0
-resume.position 0.0142188
-resume.track 26
+resume.position 230.44125
+resume.track 275
 streamer.bit_override 0
 streamer.samplerate 44100
 streamer.samplerate_mult_44 44100
