@@ -13,7 +13,8 @@
 	# characters not in the chosen font will fail to render.
 	#
 	# Otherwise, fonts are interpreted in Pango format.
-	font = $XDG_DATA_HOME/fonts/JetBrainsMonoNLNerdFont-Regular.ttf
+	# font = "$XDG_DATA_HOME/fonts/JetBrainsMonoNLNerdFont-Regular.ttf"
+	font = "JetBrainsMono NL Nerd Font Regular"
 
 	# Point size of text.
 	font-size = 24
@@ -102,7 +103,7 @@
 	# alternate-result-background-corner-radius = 0
 
 	# Selection text
-	selection-color = #F92672
+	selection-color = #f9263d
 	selection-background = #00000000
 	selection-background-padding = 0
 	selection-background-corner-radius = 0
@@ -117,12 +118,12 @@
 	# Style of the optional text cursor.
 	#
 	# Supported values: bar, block, underscore
-	text-cursor-style = bar
+	text-cursor-style = block
 
 	# Color of the text cursor
 	#
 	# If unspecified, defaults to the same as input-color
-	# text-cursor-color = #FFFFFF
+	text-cursor-color = #FFFFFF
 
 	# Color of text behind the text cursor when text-cursor-style = block
 	#
@@ -174,7 +175,6 @@
 	padding-top = 50%
 	result-spacing = 25
 	num-results = 5
-	font = monospace
 	background-color = #000A
 #
 ### Window positioning
@@ -230,7 +230,7 @@
 	# algorithm.
 	#
 	# Supported values: normal, prefix, fuzzy
-	matching-algorithm = normal
+	matching-algorithm = fuzzy
 
 	# If true, require a match to allow a selection to be made. If false,
 	# making a selection with no matches will print input to stdout.
