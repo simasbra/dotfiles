@@ -4,3 +4,6 @@
 [submodule "mozilla/firefox"]
 	path = mozilla/firefox
 	url = git@gitlab.com:simo-config/firefox.git
+[submodule "mozilla/librewolf"]
+	path = mozilla/librewolf
+	url = git@gitlab.com:simo-config/librewolf.git
