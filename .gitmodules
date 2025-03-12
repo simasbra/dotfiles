@@ -1,3 +1,6 @@
 [submodule "zsh/pure"]
 	path = zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "mozilla/firefox"]
+	path = mozilla/firefox
+	url = git@gitlab.com:simo-config/firefox.git

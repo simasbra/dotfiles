@@ -15,6 +15,7 @@
 !i3
 !sway
 !tofi
+!mozilla
 
 # But ignore these...
 zsh/.zhistory
