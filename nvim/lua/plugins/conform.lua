@@ -11,6 +11,7 @@ return {
 			json = { "prettier" },
 			html = { "prettier" },
 			css = { "prettier" },
+			scss = { "prettier" },
 			markdown = { "prettier" },
 			python = { "pyink" },
 			lua = { "stylua" },

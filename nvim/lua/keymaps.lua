@@ -28,7 +28,7 @@ map("v", "<leader>d", '"_d')
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make file executable" })
 
 -- Search and replace current word under cursor
-map("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and replace current WORD under cursor" })
+-- map("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and replace current WORD under cursor" })
 
 -- Colemak remappings
 

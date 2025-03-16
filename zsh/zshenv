@@ -66,7 +66,7 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
 
 # opt applications
-export PATH="$PATH/opt/deadbeef/bin"
+export PATH="$PATH:/opt/deadbeef/bin"
 
 # ssh
-SSH_ENV="$HOME/.ssh/agent-environment"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"

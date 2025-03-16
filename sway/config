@@ -97,7 +97,7 @@ input $mouse {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+space exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -117,14 +117,6 @@ input $mouse {
 
     # Lock computer
     bindsym $mod+Shift+z exec swaylock -f -c 000000
-
-
-    # Move the currently focused window to the scratchpad.
-    bindsym $mod+Shift+Delete move scratchpad
-
-    # Show the next next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+Delete scratchpad show 
 
 # Moving around:
 
@@ -178,11 +170,11 @@ input $mouse {
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 
-# Aplications
+# Applications
 
     # swaymsg -t get_tree | grep app_id
     assign [app_id="firefox*"] $workspace1
-    assign [app_id="Alacritty"] $workspace2
+    # assign [app_id="Alacritty"] $workspace2
     assign [app_id="deadbeef"] $workspace10
 
 # Layout stuff:
@@ -202,10 +194,10 @@ input $mouse {
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+m floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    bindsym $mod+m focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
