@@ -142,6 +142,8 @@ input $mouse {
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
 
+    focus_wrapping no
+
 # Workspaces:
 
     # Switch to workspace
@@ -174,7 +176,9 @@ input $mouse {
 
     # swaymsg -t get_tree | grep app_id
     assign [app_id="firefox*"] $workspace1
+    assign [app_id="LibreWolf"] $workspace1
     # assign [app_id="Alacritty"] $workspace2
+    assign [app_id="thunderbird"] $workspace3
     assign [app_id="deadbeef"] $workspace10
 
 # Layout stuff:

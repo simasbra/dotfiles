@@ -16,7 +16,7 @@ map("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
 -- Yanks to system clipboard
 map("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 map("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
-map("n", "<leader>Y", '"+y', { desc = "Yank to system clipboard" })
+map("n", "<leader>Y", '"+y$', { desc = "Yank to system clipboard" })
 
 -- Delete highlighted text into void register and then paste over.
 -- This way no text in yank/delete buffer is lost
@@ -28,7 +28,7 @@ map("v", "<leader>d", '"_d')
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make file executable" })
 
 -- Search and replace current word under cursor
--- map("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Search and replace current WORD under cursor" })
+map("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gcI<Left><Left><Left>]], { desc = "Search and replace current WORD under cursor" })
 
 -- Colemak remappings
 
