@@ -19,7 +19,6 @@ export SAVEHIST=10000
 
 # lsmu development
 export HOMEPATH="/home/simas/Documents/LSMU"
-export ENVIRONMENT="Development"
 
 # git
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
@@ -28,6 +27,9 @@ export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
 export PYTHON_USER_BASE="$XDG_DATA_HOME/python"
 export PATH="$PYTHON_USER_BASE/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
+export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
+export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
+export PYTHONUSERBASE=$XDG_DATA_HOME/python
 
 # rider
 export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
@@ -70,3 +72,5 @@ export PATH="$PATH:/opt/deadbeef/bin"
 
 # ssh
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export ENVIRONMENT="Development"
+
