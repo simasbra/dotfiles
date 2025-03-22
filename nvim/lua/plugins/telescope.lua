@@ -37,6 +37,8 @@ return {
 					"yarn",
 					"build",
 					"dist",
+					"venv",
+					"__pycache__",
 				},
 			},
 			-- pickers = {}

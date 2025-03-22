@@ -34,6 +34,7 @@ export LC_IDENTIFICATION="en_US.UTF-8"
 
 # lsmu development
 export HOMEPATH="/home/simas/Documents/LSMU"
+export ENVIRONMENT="Development"
 
 # git
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
@@ -45,9 +46,6 @@ export PATH="$PATH:$HOME/.local/bin"
 export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
 export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
 export PYTHONUSERBASE=$XDG_DATA_HOME/python
-
-# rider
-export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
 
 # dotnet and c# stuff
 export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
@@ -84,8 +82,7 @@ export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
 
 # opt applications
 export PATH="$PATH:/opt/deadbeef/bin"
+export PATH="$PATH:/opt/JetBrains Rider-2024.3.5/bin"
 
 # ssh
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export ENVIRONMENT="Development"
-
