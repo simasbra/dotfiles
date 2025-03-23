@@ -181,6 +181,9 @@ input $mouse {
     assign [app_id="thunderbird"] $workspace3
     assign [app_id="deadbeef"] $workspace10
 
+    for_window [title="Picture-in-Picture"] floating enable
+    for_window [class="Matplotlib"] floating enable
+
 # Layout stuff:
 
     # You can "split" the current object of your focus with
