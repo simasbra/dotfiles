@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
 
 # auto complete
-autoload -U compinit; compinit
+autoload -U compinit
+compinit
 _comp_options+=(globdots) # with hidden files
 
 # case insensitive path completion
@@ -21,11 +22,19 @@ bindkey -M vicmd "e" forward-char         # Swap e with l
 bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 
 # syntax highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+case "$(uname -s)" in
+	Linux)
+		source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # linux
+		;;
+	Darwin)
+		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
+		;;
+esac
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
 
 # Alacritty completions
