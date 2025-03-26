@@ -18,7 +18,7 @@ return {
 			c = { "clang-format" },
 			h = { "clang-format" },
 			cpp = { "clang-format" },
-			cs = { "csharpier" },
+			cs = { "clang-format" },
 			sh = { "shfmt" },
 			zsh = { "shfmt" },
 		}

@@ -15,8 +15,9 @@ map("n", "<C-u>", "<C-u>zz", { noremap = true, desc = "Move [u]p a page" })
 
 -- Yanks to system clipboard
 map("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
-map("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
+map("n", "<leader>yy", '"+yy', { desc = "Yank to system clipboard" })
 map("n", "<leader>Y", '"+y$', { desc = "Yank to system clipboard" })
+map("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 
 -- Delete highlighted text into void register and then paste over.
 -- This way no text in yank/delete buffer is lost

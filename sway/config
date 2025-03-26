@@ -118,6 +118,9 @@ input $mouse {
     # Lock computer
     bindsym $mod+Shift+z exec swaylock -f -c 000000
 
+    # capture the specified screen area to clipboard
+    bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
+
 # Moving around:
 
     # Move your focus around
@@ -177,8 +180,8 @@ input $mouse {
     # swaymsg -t get_tree | grep app_id
     assign [app_id="firefox*"] $workspace1
     assign [app_id="LibreWolf"] $workspace1
-    # assign [app_id="Alacritty"] $workspace2
     assign [app_id="thunderbird"] $workspace3
+    assign [class="discord"] $workspace9
     assign [app_id="deadbeef"] $workspace10
 
     for_window [title="Picture-in-Picture"] floating enable
