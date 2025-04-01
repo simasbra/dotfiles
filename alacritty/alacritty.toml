@@ -16,9 +16,9 @@ bold = { family = "JetBrainsMonoNL Nerd Font", style = "Bold" }
 italic = { family = "JetBrainsMonoNL Nerd Font", style = "Italic" }
 bold_italic = { family = "JetBrainsMonoNL Nerd Font", style = "Bold Italic" }
 # linux 27in 4k screen
-size = 18.0
+# size = 18.0
 # macbook pro 16in
-# size = 24.0
+size = 24.0
 
 [scrolling]
 history = 10000
