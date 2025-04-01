@@ -3,7 +3,7 @@ import = [ "~/.config/alacritty/nightfox.toml"]
 # import = [ "~/.config/alacritty/kanagawa_wave.toml"]
 
 [env]
-term = "xterm-265color"
+term = "alacritty"
 
 [window]
 decorations = "None"
