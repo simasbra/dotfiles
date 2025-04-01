@@ -16,6 +16,7 @@
 !sway
 !tofi
 !mozilla
+!clangd
 
 # But ignore these...
 zsh/.zhistory

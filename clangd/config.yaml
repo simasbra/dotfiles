@@ -1,0 +1,10 @@
+---
+CompileFlags:
+  Add: [
+    -Wall,
+    -Wextra,
+    -Wpedantic,
+    -Wconversion,
+    -fsanitize=address,undefined
+  ]
+  Compiler: gcc
