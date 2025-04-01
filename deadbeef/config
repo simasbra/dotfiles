@@ -135,10 +135,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 761
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 0
+resume.paused 1
 resume.playlist 0
-resume.position 0.0853125
-resume.track 459
+resume.position 178.39169
+resume.track 404
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0

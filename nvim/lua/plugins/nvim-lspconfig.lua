@@ -106,6 +106,18 @@ return {
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
 			clangd = {},
+			-- ccls = {
+			-- 	init_options = {
+			-- 		cache = {
+			-- 			directory = os.getenv("XDG_CACHE_HOME") and (os.getenv(
+			-- 				"XDG_CACHE_HOME"
+			-- 			) .. "/ccls") or vim.fn.expand("~/.cache/ccls"),
+			-- 		},
+			-- 		index = {
+			-- 			threads = 0,
+			-- 		},
+			-- 	},
+			-- },
 			lua_ls = {},
 			stylua = {},
 			csharp_ls = {},
@@ -143,7 +155,11 @@ return {
 			shfmt = {},
 		}
 
-		local ensure_installed = vim.tbl_keys(servers)
+		local ensure_installed = vim.tbl_filter(function(key)
+			return key ~= "ccls"
+		end, vim.tbl_keys(servers))
+
+		-- require("lspconfig").ccls.setup(servers.ccls)
 
 		require("mason").setup()
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
