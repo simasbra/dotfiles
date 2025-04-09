@@ -9,7 +9,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # default apps
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER="LibreWolf"
+export BROWSER="librewolf"
 
 # zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"

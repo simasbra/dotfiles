@@ -17,6 +17,7 @@
 !tofi
 !mozilla
 !clangd
+!clang-format
 
 # But ignore these...
 zsh/.zhistory

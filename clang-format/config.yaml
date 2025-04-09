@@ -1,0 +1,39 @@
+# clang-format configuration file
+#
+# For more information, see:
+#   https://clang.llvm.org/docs/ClangFormat.html
+#   https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+BasedOnStyle: LLVM
+AlignOperands: DontAlign
+AllowShortFunctionsOnASingleLine: false
+BreakBeforeBinaryOperators: All
+ColumnLimit: 100
+ContinuationIndentWidth: 8
+Cpp11BracedListStyle: false
+IndentGotoLabels: false
+IndentWidth: 8
+TabWidth: 8
+UseTab: Always
+---
+Language: JavaScript
+BasedOnStyle: LLVM
+ColumnLimit: 100
+ContinuationIndentWidth: 2
+IndentWidth: 2
+InsertTrailingCommas: None
+JavaScriptQuotes: Single
+JavaScriptWrapImports: true
+TabWidth: 2
+UseTab: Never
+---
+Language: CSharp
+BasedOnStyle: Microsoft
+AlignAfterOpenBracket: DontAlign
+BreakBeforeBraces: Allman
+ColumnLimit: 0
+ContinuationIndentWidth: 4
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+...

@@ -137,6 +137,7 @@ return {
 				},
 			},
 			pyink = { enabled = true },
+			pylint = {},
 			html = {},
 			ts_ls = {},
 			eslint = {

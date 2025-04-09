@@ -7,10 +7,10 @@ return {
 	config = function()
 		local lint = require("lint")
 		lint.linters_by_ft = {
-			javascript = { "eslint" },
-			javascriptreact = { "eslint" },
-			typescript = { "eslint" },
-			typescriptreact = { "eslint" },
+			javascript = { "eslint", "eslint_d" },
+			javascriptreact = { "eslint", "eslint_d" },
+			typescript = { "eslint", "eslint_d" },
+			typescriptreact = { "eslint", "eslint_d" },
 			python = { "pylint" },
 		}
 

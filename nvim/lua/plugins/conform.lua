@@ -72,6 +72,13 @@ return {
 				pyink = {
 					prepend_args = { "--line-length", "100" },
 				},
+				["clang-format"] = {
+					prepend_args = {
+						"-style=file:"
+							.. os.getenv("XDG_CONFIG_HOME")
+							.. "/clang-format/config.yaml",
+					},
+				},
 			},
 			vim.keymap.set("n", "<leader>fb", function()
 				local filetype = vim.bo.filetype
