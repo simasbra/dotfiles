@@ -174,7 +174,7 @@ input $mouse {
     # swaymsg -t get_tree | grep app_id
     assign [app_id="firefox*"] $workspace1
     assign [app_id="LibreWolf"] $workspace1
-    assign [app_id="thunderbird"] $workspace3
+    assign [app_id="thunderbird"] $workspace4
     assign [class="discord"] $workspace9
     assign [app_id="deadbeef"] $workspace10
 
