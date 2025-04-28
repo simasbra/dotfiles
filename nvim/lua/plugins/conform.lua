@@ -4,15 +4,6 @@ return {
 	config = function()
 		-- Convert supported_formatters keys to a set for enabled_filetypes
 		local supported_formatters = {
-			javascript = { "prettier" },
-			javascriptreact = { "prettier" },
-			typescript = { "prettier" },
-			typescriptreact = { "prettier" },
-			json = { "prettier" },
-			html = { "prettier" },
-			css = { "prettier" },
-			scss = { "prettier" },
-			markdown = { "prettier" },
 			python = { "pyink" },
 			lua = { "stylua" },
 			c = { "clang-format" },
