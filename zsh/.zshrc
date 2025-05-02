@@ -2,8 +2,17 @@
 
 # auto complete
 autoload -U compinit
-compinit
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots) # with hidden files
+
+# history
+[ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME"/zsh
+HISTFILE="$XDG_STATE_HOME"/zsh/history
+setopt HIST_IGNORE_DUPS
+
+# completion cache
+[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
 
 # case insensitive path completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-z}={A-Za-z}'
@@ -36,9 +45,8 @@ fpath+=($HOME/.config/zsh/pure)
 autoload -U promptinit
 promptinit
 prompt pure
-
-# Alacritty completions
-fpath+=${ZDOTDIR:-~}/.zsh_functions
+PURE_PROMPT_SYMBOL=">"
+PURE_PROMPT_VICMD_SYMBOL="<"
 
 # node shit
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm

@@ -18,7 +18,6 @@ vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true
-
 if vim.g.is_unix then
 	vim.opt.undodir = os.getenv("XDG_DATA_HOME") .. "nvim/undodir"
 end
