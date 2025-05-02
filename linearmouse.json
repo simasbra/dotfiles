@@ -1,0 +1,170 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 2.5,
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x343",
+          "category" : "trackpad",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x5ac"
+        }
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ]
+      },
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "shift" : {
+              "type" : "preventDefault"
+            }
+          }
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "reverse" : {
+          "vertical" : false
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 2
+        },
+        "reverse" : {
+          "vertical" : false
+        },
+        "speed" : {
+          "vertical" : 10
+        },
+        "distance" : {
+          "vertical" : "auto"
+        }
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productName" : "Trust Wireless Mouse",
+          "vendorID" : "0x145f",
+          "productID" : "0x23d"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "speed" : 0.1,
+        "acceleration" : 0.5
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : false,
+        "clickDebouncing" : {
+          "timeout" : 0
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : true,
+        "distance" : {
+          "vertical" : 3,
+          "horizontal" : 5
+        },
+        "acceleration" : 1,
+        "speed" : 0
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "productName" : "USB Receiver",
+          "category" : "mouse",
+          "productID" : "0xc52b"
+        }
+      },
+      "buttons" : {
+        "mappings" : [
+          {
+            "command" : false,
+            "option" : false,
+            "control" : false,
+            "action" : "missionControl",
+            "shift" : false,
+            "button" : 2
+          },
+          {
+            "button" : 3,
+            "action" : "missionControl.spaceLeft",
+            "option" : false,
+            "control" : false,
+            "shift" : false,
+            "command" : false
+          },
+          {
+            "control" : false,
+            "button" : 4,
+            "action" : "missionControl.spaceRight",
+            "command" : false,
+            "shift" : false,
+            "option" : false
+          }
+        ],
+        "universalBackForward" : false,
+        "clickDebouncing" : {
+          "timeout" : 0
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true,
+        "speed" : 0.3,
+        "acceleration" : 0.7
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 0.3,
+        "speed" : 1,
+        "disableAcceleration" : false
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1.08
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        }
+      },
+      "if" : {
+        "device" : {
+          "serialNumber" : "b8-f6-b1-25-fc-fa",
+          "category" : "mouse",
+          "productName" : "itechnic’s Mouse",
+          "productID" : "0x30d",
+          "vendorID" : "0x5ac"
+        }
+      }
+    }
+  ]
+}
