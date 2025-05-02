@@ -31,17 +31,15 @@ export LC_ADDRESS="lt_LT.UTF-8"
 export LC_TELEPHONE="lt_LT.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 
-# lsmu development
+# development
 export HOMEPATH="/home/simas/Documents/LSMU"
 export ENVIRONMENT="Development"
+export PATH="$PATH:$HOME/.local/bin"
 
 # git
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
 
 # python shit
-export PYTHON_USER_BASE="$XDG_DATA_HOME/python"
-export PATH="$PYTHON_USER_BASE/bin:$PATH"
-export PATH="$PATH:$HOME/.local/bin"
 export PYTHON_HISTORY=$XDG_STATE_HOME/python_history
 export PYTHONPYCACHEPREFIX=$XDG_CACHE_HOME/python
 export PYTHONUSERBASE=$XDG_DATA_HOME/python
@@ -58,7 +56,6 @@ export MACHINE_STORAGE_PATH="$XDG_DATA_HOME"/docker-machine
 # node
 export NVM_DIR="$XDG_DATA_HOME"/nvm
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 
 # steam
@@ -76,9 +73,6 @@ export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
 # os specific
 case "$(uname -s)" in
 	Linux)
-		# ssh
-		export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
 		# gnupg
 		export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
