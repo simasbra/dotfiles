@@ -73,6 +73,9 @@ export DISCORD_USER_DATA_DIR="${XDG_DATA_HOME}"
 # os specific
 case "$(uname -s)" in
 	Linux)
+		# ssh (https://wiki.archlinux.org/title/SSH_keys#Start_ssh-agent_with_systemd_user)
+		export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
 		# gnupg
 		export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 
