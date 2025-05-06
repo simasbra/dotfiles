@@ -46,6 +46,7 @@ include /etc/sway/config-vars.d/*
 output * bg /home/simas/Pictures/DSC_2678.jpg fill
 
 output DP-1 resolution 3840x2160 scale 1.5
+output DP-3 resolution 3840x2160 scale 1.5
 
 ### Idle configuration
 
@@ -107,7 +108,7 @@ input $mouse {
         -B 'Yes, exit sway' 'swaymsg exit'
 
     # Suspend computer
-    bindsym $mod+$alt+Shift+s exec swaylock -f -c 000000 && systemctl suspend
+    # bindsym $mod+$alt+Shift+s exec swaylock -f -c 000000 && systemctl suspend
 
     # Lock computer
     bindsym $mod+Shift+z exec swaylock -f -c 000000
