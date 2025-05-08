@@ -62,7 +62,7 @@ return {
 			constrain_cursor = "editable",
 
 			-- Set to true to watch the filesystem for changes and reload oil
-			watch_for_changes = false,
+			watch_for_changes = true,
 
 			-- Keymaps in oil buffer. Can be any value that `vim.keymap.set` accepts OR a table of keymap
 			-- options with a `callback` (e.g. { callback = function() ... end, desc = "", mode = "n" })
@@ -71,22 +71,63 @@ return {
 			-- Set to `false` to remove a keymap
 			-- See :help oil-actions for a list of all available actions
 			keymaps = {
-				["g?"] = { "actions.show_help" },
-				["<CR>"] = { "actions.select" },
-				["<C-s>"] = { "actions.select", opts = { vertical = true }, desc = "Open the entry in a vertical [s]plit" },
-				["<C-h>"] = { "actions.select", opts = { horizontal = true }, desc = "Open the entry in a [h]orizontal split" },
-				["<C-t>"] = { "actions.select", opts = { tab = true }, desc = "Open the entry in new [t]ab" },
-				["<C-p>"] = { "actions.preview", desc = "[P]review the entry" },
-				["<C-c>"] = { "actions.close", desc = "[C]lose" },
-				["<C-l>"] = { "actions.refresh", desc = "refresh" },
-				["-"] = { "actions.parent", desc = "Go back a directory" },
-				["_"] = { "actions.open_cwd", desc = "Open current working directory" },
-				["`"] = { "actions.cd", desc = "Change directory" },
-				["~"] = { "actions.cd", opts = { scope = "tab" }, desc = ":tcd to the current oil directory" },
-				["ts"] = { "actions.change_sort", desc = "[T]oggle [s]orting direction" },
-				["gx"] = { "actions.open_external", desc = "Open in external editor/browser" },
-				["t."] = { "actions.toggle_hidden", desc = "[T]oggle hidden files" },
-				["t\\"] = { "actions.toggle_trash", desc = "[T]oggle trash" },
+				["g?"] = {
+					"actions.show_help",
+				},
+				["<CR>"] = {
+					"actions.select",
+				},
+				["<C-s>"] = {
+					"actions.select",
+					opts = { vertical = true },
+					desc = "Open the entry in a vertical [s]plit",
+				},
+				["<C-h>"] = {
+					"actions.select",
+					opts = { horizontal = true },
+					desc = "Open the entry in a [h]orizontal split",
+				},
+				["<C-p>"] = {
+					"actions.preview",
+					desc = "[P]review the entry",
+				},
+				["<C-c>"] = {
+					"actions.close",
+					desc = "[C]lose",
+				},
+				["-"] = {
+					"actions.parent",
+					desc = "Go back a directory",
+				},
+				["_"] = {
+					"actions.open_cwd",
+					desc = "Open current working directory",
+				},
+				["`"] = {
+					"actions.cd",
+					desc = "Change directory",
+				},
+				["~"] = {
+					"actions.cd",
+					opts = { scope = "tab" },
+					desc = ":tcd to the current oil directory",
+				},
+				["ts"] = {
+					"actions.change_sort",
+					desc = "[T]oggle [s]orting direction",
+				},
+				["gx"] = {
+					"actions.open_external",
+					desc = "Open in external editor/browser",
+				},
+				["t."] = {
+					"actions.toggle_hidden",
+					desc = "[T]oggle hidden files",
+				},
+				["tt"] = {
+					"actions.toggle_trash",
+					desc = "[T]oggle [t]rash",
+				},
 			},
 
 			-- Set to false to disable all of the above keymaps
@@ -111,7 +152,7 @@ return {
 				natural_order = true,
 
 				-- Sort file and directory names case insensitive
-				case_insensitive = false,
+				case_insensitive = true,
 				sort = {
 					-- sort order can be "asc" or "desc"
 					-- see :help oil-columns to see which columns are sortable
