@@ -44,6 +44,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 
 output * bg /home/simas/Pictures/DSC_2678.jpg fill
+font pango:JetBrainsMonoNL Nerd Font 12
 
 output DP-1 resolution 3840x2160 scale 1.5
 output DP-3 resolution 3840x2160 scale 1.5
@@ -176,6 +177,8 @@ input $mouse {
     assign [app_id="firefox*"] $workspace1
     assign [app_id="LibreWolf"] $workspace1
     assign [app_id="thunderbird"] $workspace4
+    assign [app_id="DBeaver"] $workspace5
+    assign [class="steam"] $workspace8
     assign [class="discord"] $workspace9
     assign [app_id="deadbeef"] $workspace10
 
