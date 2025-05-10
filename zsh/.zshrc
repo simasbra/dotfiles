@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 
+alias ls="ls --color=auto"
+
 # auto complete
 autoload -U compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
@@ -30,15 +32,9 @@ bindkey -M vicmd "n" down-line-or-history # Swap n with j
 bindkey -M vicmd "e" forward-char         # Swap e with l
 bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 
-# syntax highlighting
-case "$(uname -s)" in
-	Linux)
-		source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # linux
-		;;
-	Darwin)
-		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
-		;;
-esac
+# node shit
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)
@@ -48,6 +44,12 @@ prompt pure
 PURE_PROMPT_SYMBOL=">"
 PURE_PROMPT_VICMD_SYMBOL="<"
 
-# node shit
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+# syntax highlighting
+case "$(uname -s)" in
+	Linux)
+		source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # linux
+		;;
+	Darwin)
+		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
+		;;
+esac

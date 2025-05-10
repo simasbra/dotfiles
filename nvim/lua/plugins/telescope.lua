@@ -18,6 +18,7 @@ return {
 		require("telescope").setup({
 			defaults = {
 				file_ignore_patterns = {
+					"git",
 					"node_modules",
 					"obj",
 					"bin",
@@ -82,7 +83,11 @@ return {
 
 		vim.keymap.set("n", "<leader>sc", function()
 			local config_home = vim.env.XDG_CONFIG_HOME or vim.env.HOME .. "/.config"
-			builtin.find_files({ cwd = config_home, results_title = "Configuration files" })
+			builtin.find_files({
+				cwd = config_home,
+				hidden = true,
+				results_title = "Configuration files",
+			})
 		end, { desc = "[S]earch [C]onfiguration files" })
 	end,
 }
