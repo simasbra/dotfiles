@@ -21,6 +21,7 @@
 !linearmouse
 !kitty
 !foot
+!locale.conf
 
 # But ignore these...
 mozilla/thunderbird/
