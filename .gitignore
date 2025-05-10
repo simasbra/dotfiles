@@ -20,6 +20,7 @@
 !clang-format
 !linearmouse
 !kitty
+!foot
 
 # But ignore these...
 mozilla/thunderbird/
