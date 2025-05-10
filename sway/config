@@ -142,6 +142,7 @@ input $mouse {
     bindsym $mod+Shift+Right move right
 
     focus_wrapping no
+    mouse_warping container
 
 # Workspaces:
 
