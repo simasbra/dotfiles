@@ -31,7 +31,6 @@ return {
 				layout_config = {
 					width = 0.8,
 					height = 0.95,
-					preview_height = 0.5,
 					preview_cutoff = 0,
 				},
 			},
@@ -56,12 +55,7 @@ return {
 		vim.keymap.set("n", "<leader>sg", builtin.live_grep, { desc = "[S]earch by [G]rep" })
 		vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
-		vim.keymap.set(
-			"n",
-			"<leader>so",
-			builtin.oldfiles,
-			{ desc = "[S]earch previously [O]pened (old) files" }
-		)
+		vim.keymap.set("n", "<leader>so", builtin.oldfiles, { desc = "[S]earch [O]ld files" })
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 
 		-- Slightly advanced example of overriding default behavior and theme
@@ -85,5 +79,10 @@ return {
 		vim.keymap.set("n", "<leader>sn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[S]earch [N]eovim files" })
+
+		vim.keymap.set("n", "<leader>sc", function()
+			local config_home = vim.env.XDG_CONFIG_HOME or vim.env.HOME .. "/.config"
+			builtin.find_files({ cwd = config_home, results_title = "Configuration files" })
+		end, { desc = "[S]earch [C]onfiguration files" })
 	end,
 }
