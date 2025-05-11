@@ -43,7 +43,7 @@ include /etc/sway/config-vars.d/*
 
 ### Output configuration
 
-output * bg /home/simas/Pictures/DSC_2678.jpg fill
+output * bg /home/simas/[Pp]ictures/DSC_2678.jpg fill
 font pango:JetBrainsMonoNL Nerd Font 12
 
 output DP-1 resolution 3840x2160 scale 1.5
@@ -176,7 +176,7 @@ input $mouse {
 
     # swaymsg -t get_tree | grep app_id
     assign [app_id="firefox*"] $workspace1
-    assign [app_id="LibreWolf"] $workspace1
+    assign [app_id="[Ll]ibre[Ww]olf"] $workspace1
     assign [app_id="thunderbird"] $workspace4
     assign [app_id="DBeaver"] $workspace5
     assign [class="steam"] $workspace8
@@ -195,9 +195,9 @@ input $mouse {
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+t layout toggle split
+    # bindsym $mod+s layout stacking
+    bindsym $mod+t layout tabbed
+    bindsym $mod+s layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen

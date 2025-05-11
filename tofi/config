@@ -17,7 +17,7 @@
 	font = "JetBrainsMono NL Nerd Font Regular"
 
 	# Point size of text.
-	font-size = 24
+	font-size = 36
 
 	# Comma separated list of OpenType font feature settings to apply,
 	# if supported by the chosen font. The format is similar to the CSS
