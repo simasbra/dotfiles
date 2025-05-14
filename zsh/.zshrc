@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 alias ls="ls -1 --color=auto"
-alias steam="~/.local/bin/steam.sh"
 
 # auto complete
 autoload -U compinit

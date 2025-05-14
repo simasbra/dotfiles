@@ -24,5 +24,6 @@
     "album_track_num_pad_min": 1,
     "downloads_concurrent_max": 5,
     "symlink_to_track": false,
-    "playlist_create": false
+    "playlist_create": false,
+    "metadata_replay_gain": true
 }
