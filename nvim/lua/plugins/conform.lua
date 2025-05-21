@@ -79,6 +79,9 @@ return {
 							.. "/clang-format/config.yaml",
 					},
 				},
+				prettier = {
+					prepend_args = { "--print-width", "100" },
+				},
 			},
 			vim.keymap.set("n", "<leader>fb", function()
 				local filetype = vim.bo.filetype

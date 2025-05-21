@@ -22,6 +22,9 @@
 !kitty
 !foot
 !locale.conf
+!vim
+vim/*
+!vim/vimrc
 
 # But ignore these...
 mozilla/thunderbird/
