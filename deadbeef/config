@@ -38,7 +38,7 @@ filebrowser.showicons 1
 filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
-filechooser.lastdir file:///home/simas/music/Albums
+filechooser.lastdir file:///home/simas/music
 gtkui.action_separators 0
 gtkui.autoresize_columns 0
 gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"275","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"41","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"488","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"695","align":"0","color_override":"0","color":"#ffeeeeec"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"173","align":"0","color_override":"0","color":"#ff000000"}]
@@ -121,17 +121,17 @@ mainwin.geometry.x 0
 mainwin.geometry.y 0
 medialib.deadbeef.enabled 1
 network.proxy.port 8080
-output_plugin alsa
-pipewire_soundcard bluez_output.00_42_79_4F_B6_D4.1
+output_plugin pipewire
+pipewire_soundcard alsa_output.usb-RME_Babyface__23429197__45FE35685965AC8-00.analog-stereo
 playback.loop 0
 playback.order 0
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 424
+playlist.cursor.0 753
 playlist.cursor.1 0
 playlist.groups.spacing 8
 playlist.pin.groups 1
-playlist.scroll.0 -424
+playlist.scroll.0 20921
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Albums
@@ -139,10 +139,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 777
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 0
+resume.paused 1
 resume.playlist 0
-resume.position 105.72087
-resume.track 301
+resume.position 147.04818
+resume.track 687
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0
