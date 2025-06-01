@@ -182,6 +182,8 @@ input $mouse {
     assign [app_id="org.remmina.Remmina"] $workspace7
     assign [class="steam"] $workspace8
     assign [class="Cities.x64"] $workspace8
+    assign [class="Paradox Launcher"] $workspace8
+    assign [class="Project Zomboid"] $workspace8
     assign [class="discord"] $workspace9
     assign [app_id="deadbeef"] $workspace10
 

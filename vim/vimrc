@@ -70,3 +70,5 @@ noremap l k
 " noremap l kh
 
 colorscheme desert
+
+set viminfofile=$XDG_STATE_HOME/vim/viminfo
