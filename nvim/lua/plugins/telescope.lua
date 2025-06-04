@@ -87,6 +87,7 @@ return {
 			builtin.find_files({
 				cwd = config_home,
 				hidden = true,
+				no_ignore = true,
 				results_title = "Configuration files",
 			})
 		end, { desc = "[S]earch [C]onfiguration files" })
