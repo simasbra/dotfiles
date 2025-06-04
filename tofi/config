@@ -221,7 +221,7 @@
 	# Specify an alternate file to read and store history information
 	# from / to. This shouldn't normally be needed, and is intended to
 	# facilitate the creation of custom modes.
-	# history-file = /path/to/histfile
+	history-file = /home/simas/.local/state/tofi/history
 
 	# Select the matching algorithm used. If normal, substring matching is
 	# used, weighted to favour matches closer to the beginning of the

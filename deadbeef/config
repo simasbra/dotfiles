@@ -127,11 +127,11 @@ playback.loop 0
 playback.order 0
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 298
+playlist.cursor.0 942
 playlist.cursor.1 0
 playlist.groups.spacing 8
 playlist.pin.groups 1
-playlist.scroll.0 8380
+playlist.scroll.0 26054
 playlist.scroll.1 0
 playlist.scroll.cursorfollowplayback 1
 playlist.tab.00000 Albums
@@ -139,10 +139,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 777
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 1
+resume.paused 0
 resume.playlist 0
-resume.position 260.89978
-resume.track 296
+resume.position 0.0000000
+resume.track 411
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0

@@ -4,17 +4,17 @@ alias ls="ls -1 --color=auto"
 
 # auto complete
 autoload -U compinit
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-$ZSH_VERSION
+compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 _comp_options+=(globdots) # with hidden files
 
 # history
-[ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME"/zsh
-HISTFILE="$XDG_STATE_HOME"/zsh/history
+[ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME/zsh"
+HISTFILE="$XDG_STATE_HOME/zsh/history"
 setopt HIST_IGNORE_DUPS
 
 # completion cache
-[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
-zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME/zsh"
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/zcompcache"
 
 # case insensitive path completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-z}={A-Za-z}'
@@ -35,6 +35,7 @@ bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 # node shit
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)

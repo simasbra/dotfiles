@@ -25,6 +25,9 @@
 !vim
 vim/*
 !vim/vimrc
+!user-dirs.dirs
+!user-dirs.locale
+!locale.conf
 
 # But ignore these...
 mozilla/thunderbird/
