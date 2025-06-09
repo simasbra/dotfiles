@@ -58,11 +58,9 @@ return {
 		vim.keymap.set("n", "<leader>sd", builtin.diagnostics, { desc = "[S]earch [D]iagnostics" })
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 		vim.keymap.set("n", "<leader>so", builtin.oldfiles, { desc = "[S]earch [O]ld files" })
-		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "Find existing buffers" })
 
-		-- Slightly advanced example of overriding default behavior and theme
 		vim.keymap.set("n", "<leader>/", function()
-			-- You can pass additional configuration to Telescope to change the theme, layout, etc.
 			builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
 				winblend = 10,
 				previewer = false,
@@ -77,11 +75,12 @@ return {
 			})
 		end, { desc = "[S]earch [/] in Open Files" })
 
-		-- Shortcut for searching your Neovim configuration files
+		-- Searching Neovim configuration files
 		vim.keymap.set("n", "<leader>sn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[S]earch [N]eovim files" })
 
+		-- Searching all configuration files
 		vim.keymap.set("n", "<leader>sc", function()
 			local config_home = vim.env.XDG_CONFIG_HOME or vim.env.HOME .. "/.config"
 			builtin.find_files({
@@ -91,5 +90,12 @@ return {
 				results_title = "Configuration files",
 			})
 		end, { desc = "[S]earch [C]onfiguration files" })
+
+		vim.keymap.set("n", "<leader>sp", function()
+			builtin.find_files({
+				hidden = true,
+				no_ignore = true,
+			})
+		end, { desc = "[S]earch all files" })
 	end,
 }
