@@ -172,7 +172,7 @@ input $mouse {
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 
-# Applications
+# Applications:
 
     # swaymsg -t get_tree | grep -E "app_id|class"
     assign [app_id="firefox*"] $workspace1
@@ -202,7 +202,6 @@ input $mouse {
     # bindsym $mod+s layout stacking
     bindsym $mod+t layout tabbed
     bindsym $mod+s layout toggle split
-
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -251,8 +250,19 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
+# Music controls:
+
+bindsym $mod+Shift+F8 exec playerctl play-pause
+bindsym $mod+Shift+F7 exec playerctl previous
+bindsym $mod+Shift+F9 exec playerctl next
+bindsym $mod+Shift+F10 exec /bin/sh -c "if [[ "$(awk "BEGIN {print ("$(playerctl volume)" > 0)}")" = 1 ]];\
+                                        then playerctl volume 0;\
+                                        else playerctl volume 1; fi"
+bindsym $mod+Shift+F11 exec playerctl volume 0.0625-
+bindsym $mod+Shift+F12 exec playerctl volume 0.0625+
 
 # Status Bar:
 
