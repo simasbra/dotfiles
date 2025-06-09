@@ -18,8 +18,8 @@ vim.opt.breakindent = true
 
 -- Save undo history
 vim.opt.undofile = true
-if vim.g.is_unix then
-	vim.opt.undodir = os.getenv("XDG_DATA_HOME") .. "/nvim/undodir"
+if vim.fn.has("win32") == 0 then
+	vim.opt.undodir = (os.getenv("XDG_DATA_HOME") or os.getenv("HOME") .. ".local/share") .. "/nvim/undodir"
 end
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term

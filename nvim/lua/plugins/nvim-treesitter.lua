@@ -26,7 +26,7 @@ return {
 	config = function(_, opts)
 		-- See `:help nvim-treesitter`
 		---@diagnostic disable-next-line: missing-fields
-		require("nvim-treesitter.install").compilers = vim.g.is_unix and { "gcc", "clang" } or { "zig" }
+		require("nvim-treesitter.install").compilers = vim.fn.has("win32") == 0 and { "gcc", "clang" } or { "zig" }
 		require("nvim-treesitter.configs").setup(opts)
 
 		-- Override `.h` files to be treated as `c` files

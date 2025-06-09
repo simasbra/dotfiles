@@ -23,18 +23,23 @@ local plugins = {
 	require("plugins.gitsigns"),
 	require("plugins.lualine"),
 	require("plugins.luvit-meta"),
+	--
 	-- navigation
 	require("plugins.oil"),
 	require("plugins.undotree"),
+
 	-- lsp stuff
 	require("plugins.lazydev"),
 	require("plugins.nvim-lspconfig"),
 	require("plugins.nvim-treesitter"),
-	require("plugins.nvim-cmp"),
+	-- require("plugins.nvim-cmp"),
+	require("plugins.blink-cmp"),
 	require("plugins.nvim-autopairs"),
+
 	-- formatting and lint
 	require("plugins.conform"),
 	require("plugins.nvim-lint"),
+
 	-- themes
 	require("plugins.nightfox"),
 	-- require("plugins.kanagawa"),
