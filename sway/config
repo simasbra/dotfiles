@@ -255,11 +255,11 @@ bindsym $mod+r mode "resize"
 
 # Music controls:
 
-bindsym $mod+Shift+F8 exec playerctl play-pause
 bindsym $mod+Shift+F7 exec playerctl previous
+bindsym $mod+Shift+F8 exec playerctl play-pause
 bindsym $mod+Shift+F9 exec playerctl next
-bindsym $mod+Shift+F10 exec /bin/sh -c "if [[ "$(awk "BEGIN {print ("$(playerctl volume)" > 0)}")" = 1 ]];\
-                                        then playerctl volume 0;\
+bindsym $mod+Shift+F10 exec /bin/sh -c "if [[ "$(awk "BEGIN {print ("$(playerctl volume)" > 0)}")" = 1 ]]; \
+                                        then playerctl volume 0; \
                                         else playerctl volume 1; fi"
 bindsym $mod+Shift+F11 exec playerctl volume 0.0625-
 bindsym $mod+Shift+F12 exec playerctl volume 0.0625+
