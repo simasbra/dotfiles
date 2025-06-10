@@ -188,7 +188,7 @@ input $mouse {
     assign [class="Paradox Launcher"] $workspace8
     assign [class="Project Zomboid"] $workspace8
     assign [class="discord"] $workspace9
-    assign [app_id="guitarix"] $workspace10
+    assign [app_id="guitarix"] $workspace9
     assign [app_id="deadbeef"] $workspace10
 
     for_window [title="Picture-in-Picture"] floating enable
