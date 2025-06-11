@@ -183,6 +183,7 @@ input $mouse {
     assign [app_id="thunderbird"] $workspace4
     assign [app_id="DBeaver"] $workspace5
     assign [app_id="org.remmina.Remmina"] $workspace7
+    assign [app_id="virt-manager"] $workspace7
     assign [class="steam"] $workspace8
     assign [class="Cities.x64"] $workspace8
     assign [class="Paradox Launcher"] $workspace8
@@ -194,6 +195,7 @@ input $mouse {
     for_window [title="Picture-in-Picture"] floating enable
     for_window [class="Matplotlib"] floating enable
     for_window [app_id="guitarix"] floating enable
+    for_window [class="KeePassXC"] floating enable
 
 # Layout stuff:
 
