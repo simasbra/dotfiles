@@ -28,6 +28,7 @@ vim/*
 !user-dirs.dirs
 !user-dirs.locale
 !locale.conf
+!guitarix
 
 # But ignore these...
 mozilla/thunderbird/
