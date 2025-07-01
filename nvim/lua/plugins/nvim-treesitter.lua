@@ -28,16 +28,6 @@ return {
 		require("nvim-treesitter.install").compilers = vim.fn.has("win32") == 0 and { "gcc", "clang" } or { "zig" }
 		require("nvim-treesitter.configs").setup(opts)
 
-		-- Override `.h` files to be treated as `c` files
-		vim.api.nvim_create_autocmd("FileType", {
-			pattern = "c,cpp",
-			callback = function()
-				if vim.fn.expand("%:e") == "h" then
-					vim.bo.filetype = "c"
-				end
-			end,
-		})
-
 		-- There are additional nvim-treesitter modules that you can use to interact
 		-- with nvim-treesitter. You should go explore a few and see what interests you:
 		--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`

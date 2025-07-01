@@ -95,18 +95,6 @@ return {
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
 			clangd = {},
-			-- ccls = {
-			-- 	init_options = {
-			-- 		cache = {
-			-- 			directory = os.getenv("XDG_CACHE_HOME") and (os.getenv(
-			-- 				"XDG_CACHE_HOME"
-			-- 			) .. "/ccls") or vim.fn.expand("~/.cache/ccls"),
-			-- 		},
-			-- 		index = {
-			-- 			threads = 0,
-			-- 		},
-			-- 	},
-			-- },
 			lua_ls = {},
 			stylua = {},
 			csharp_ls = {},
