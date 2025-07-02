@@ -13,6 +13,7 @@ ContinuationIndentWidth: 8
 Cpp11BracedListStyle: false
 IndentGotoLabels: false
 IndentWidth: 8
+SkipMacroDefinitionBody: true
 TabWidth: 8
 UseTab: Always
 ---
