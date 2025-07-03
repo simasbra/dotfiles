@@ -30,6 +30,7 @@ vim/*
 !locale.conf
 !guitarix
 !powershell
+!htop
 
 # But ignore these...
 mozilla/thunderbird/
