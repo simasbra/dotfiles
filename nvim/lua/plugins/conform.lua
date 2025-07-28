@@ -72,12 +72,12 @@ return {
 				pyink = {
 					prepend_args = { "--line-length", "100" },
 				},
-				["clang-format"] = {
+				 ["clang-format"] = vim.fn.has("win32") == 0 and {
 					prepend_args = {
 						"-style=file:"
 							.. os.getenv("XDG_CONFIG_HOME")
 							.. "/clang-format/config.yaml",
-					},
+					} or {},
 				},
 				prettier = {
 					prepend_args = { "--print-width", "100" },
