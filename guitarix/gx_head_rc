@@ -1378,8 +1378,8 @@
     }
   },
   "jack_connections", {
-    "input": ["Babyface (23429197) Analog Stereo:capture_FL", "Babyface (23429197) Analog Stereo:capture_FR"],
-    "output1": ["Babyface (23429197) Analog Stereo:playback_FL", "Babyface (23429197) Analog Stereo:playback_FR"],
+    "input": [],
+    "output1": [],
     "output2": [],
     "midi_input": [],
     "midi_output": [],

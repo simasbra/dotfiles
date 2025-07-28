@@ -6,7 +6,7 @@
   ["musiclab_brain_may", "musiclab_brain_may.gx", 1, 0, [1, 2], 1749565026],
   ["musiclab_gary_moore", "musiclab_gary_moore.gx", 1, 0, [1, 2], 1749565014],
   ["musiclab_stevie_ray_vaughan", "musiclab_stevie_ray_vaughan.gx", 1, 0, [1, 2], 1749565004],
-  ["musiclab_angus_young", "musiclab_angus_young.gx", 1, 0, [1, 2], 1749564991],
+  ["musiclab_angus_young", "musiclab_angus_young.gx", 1, 0, [1, 2], 1750183141],
   ["musiclab_eddie_van_halen", "musiclab_eddie_van_halen.gx", 1, 0, [1, 2], 1749564978],
   ["musiclab_john_petrucci", "musiclab_john_petrucci.gx", 1, 0, [1, 2], 1749564965],
   ["musiclab_mark_knopfler", "musiclab_mark_knopfler.gx", 1, 0, [1, 2], 1749564952],
