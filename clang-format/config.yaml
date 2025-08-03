@@ -6,6 +6,7 @@
 ---
 BasedOnStyle: LLVM
 AlignOperands: DontAlign
+# AlignAfterOpenBracket: AlwaysBreak
 AllowShortFunctionsOnASingleLine: false
 BreakBeforeBinaryOperators: All
 ColumnLimit: 100
