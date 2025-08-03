@@ -48,8 +48,16 @@ PURE_PROMPT_VICMD_SYMBOL="<"
 # syntax highlighting
 case "$(uname -s)" in
 	Linux)
-		source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # linux
+		case "$(awk -F'[="]+' '/^NAME=/ { print $2 }' /etc/os-release)" in
+			*Fedora*)
+				source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
+				;;
+			*)
+				source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+				;;
+		esac
 		;;
+
 	Darwin)
 		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
 		;;
