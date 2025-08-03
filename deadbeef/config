@@ -38,7 +38,7 @@ filebrowser.showicons 1
 filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
-filechooser.lastdir file:///home/simas/music
+filechooser.lastdir file:///home/simas/music/Donna%20Summer%20-%20The%20Dance%20Collection%20(1987)%20%5BHi-Res%5D
 gtkui.action_separators 0
 gtkui.autoresize_columns 0
 gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"283","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"41","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"488","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"695","align":"0","color_override":"0","color":"#ffeeeeec"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"173","align":"0","color_override":"0","color":"#ff000000"}]
@@ -88,26 +88,28 @@ hotkey.key08 "Ctrl j" 0 0 jump_to_current_track
 hotkey.key09 "F1" 0 0 help
 hotkey.key10 "Delete" 1 0 remove_from_playlist
 hotkey.key11 "Ctrl w" 0 0 remove_current_playlist
-hotkey.key12 "Alt Return" 1 0 track_properties
-hotkey.key13 "Return" 0 0 play
-hotkey.key14 "Ctrl p" 0 0 toggle_pause
-hotkey.key15 "Alt 1" 0 0 playlist1
-hotkey.key16 "Alt 2" 0 0 playlist2
-hotkey.key17 "Alt 3" 0 0 playlist3
-hotkey.key18 "Alt 4" 0 0 playlist4
-hotkey.key19 "Alt 5" 0 0 playlist5
-hotkey.key20 "Alt 6" 0 0 playlist6
-hotkey.key21 "Alt 7" 0 0 playlist7
-hotkey.key22 "Alt 8" 0 0 playlist8
-hotkey.key23 "Alt 9" 0 0 playlist9
-hotkey.key24 "Alt 0" 0 0 playlist10
-hotkey.key25 "z" 0 0 prev
-hotkey.key26 "x" 0 0 play
-hotkey.key27 "c" 0 0 toggle_pause
-hotkey.key28 "v" 0 0 stop
-hotkey.key29 "b" 0 0 next
-hotkey.key30 "n" 0 0 playback_random
-hotkey.key31 "Ctrl k" 0 0 toggle_stop_after_album
+hotkey.key13 "Alt Return" 1 0 track_properties
+hotkey.key14 "Return" 0 0 play
+hotkey.key15 "Ctrl p" 0 0 toggle_pause
+hotkey.key16 "Alt 1" 0 0 playlist1
+hotkey.key17 "Alt 2" 0 0 playlist2
+hotkey.key18 "Alt 3" 0 0 playlist3
+hotkey.key19 "Alt 4" 0 0 playlist4
+hotkey.key20 "Alt 5" 0 0 playlist5
+hotkey.key21 "Alt 6" 0 0 playlist6
+hotkey.key22 "Alt 7" 0 0 playlist7
+hotkey.key23 "Alt 8" 0 0 playlist8
+hotkey.key24 "Alt 9" 0 0 playlist9
+hotkey.key25 "Alt 0" 0 0 playlist10
+hotkey.key26 z 0 0 prev
+hotkey.key27 x 0 0 play
+hotkey.key28 c 0 0 toggle_pause
+hotkey.key29 v 0 0 stop
+hotkey.key30 b 0 0 next
+hotkey.key31 n 0 0 playback_random
+hotkey.key32 "Ctrl k" 0 0 toggle_stop_after_album
+hotkey.key33 "Ctrl z" 0 0 undo
+hotkey.key34 "Ctrl Shift z" 0 0 redo
 hotkeys_created 1
 junk.enable_cp1251_detection 0
 logwindow.geometry.h 1380
@@ -125,7 +127,7 @@ output_plugin pipewire
 pipewire_soundcard default
 playback.loop 0
 playback.order 0
-playback.volume.normalized 1.0000000
+playback.volume.normalized 0.6378044
 playlist.current 0
 playlist.cursor.0 1075
 playlist.cursor.1 0
@@ -141,8 +143,8 @@ prefwin.geometry.x 0
 prefwin.geometry.y 0
 resume.paused 1
 resume.playlist 0
-resume.position 17.519075
-resume.track 852
+resume.position 29.717495
+resume.track 1136
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0

@@ -1,6 +1,7 @@
 return {
 	"saghen/blink.cmp",
 	version = "1.*",
+	event = "VimEnter",
 	dependencies = {
 		{ -- Snippet Engine
 			"L3MON4D3/LuaSnip",
@@ -19,10 +20,10 @@ return {
 				--    See the README about individual language/framework/plugin snippets:
 				--    https://github.com/rafamadriz/friendly-snippets
 				-- {
-				--   'rafamadriz/friendly-snippets',
-				--   config = function()
-				--     require('luasnip.loaders.from_vscode').lazy_load()
-				--   end,
+				-- 	"rafamadriz/friendly-snippets",
+				-- 	config = function()
+				-- 		require("luasnip.loaders.from_vscode").lazy_load()
+				-- 	end,
 				-- },
 			},
 			opts = {},
@@ -45,7 +46,12 @@ return {
 		keymap = { preset = "default" },
 
 		appearance = { nerd_font_variant = "mono" },
-		completion = { documentation = { auto_show = true, auto_show_delay_ms = 0 } },
+		completion = {
+			documentation = {
+				auto_show = true,
+				auto_show_delay_ms = 0,
+			},
+		},
 
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
@@ -60,5 +66,6 @@ return {
 		},
 		fuzzy = { implementation = "lua" },
 	},
+	signature = { enabled = true },
 	opts_extend = { "sources.default" },
 }

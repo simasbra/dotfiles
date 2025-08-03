@@ -28,7 +28,7 @@ set $menu tofi-run | xargs swaymsg exec --
 set $workspace1 "1 Browser"
 set $workspace2 "2 Terminal"
 set $workspace3 "3 Development"
-set $workspace4 "4 Mail"
+set $workspace4 "4 Utilities"
 set $workspace5 "5 Connections"
 set $workspace6 "6 Misc"
 set $workspace7 "7 Computers"
@@ -174,15 +174,15 @@ input $mouse {
     bindsym $mod+Shift+8 move container to workspace number $workspace8
     bindsym $mod+Shift+9 move container to workspace number $workspace9
     bindsym $mod+Shift+0 move container to workspace number $workspace10
-    # Note: workspaces can have any name you want, not just numbers.
-    # We just use 1-10 as the default.
 
 # Applications:
 
     # swaymsg -t get_tree | grep -E "app_id|class"
     assign [app_id="firefox*"] $workspace1
     assign [app_id="[Ll]ibre[Ww]olf"] $workspace1
-    assign [app_id="thunderbird"] $workspace4
+    assign [app_id="brasero"] $workspace4
+    assign [app_id="org.gnome.Nautilus"] $workspace4
+    assign [app_id="guitarix"] $workspace4
     assign [app_id="DBeaver"] $workspace5
     assign [class="qBittorrent"] $workspace5
     assign [app_id="org.remmina.Remmina"] $workspace7
@@ -192,8 +192,8 @@ input $mouse {
     assign [class="Paradox Launcher"] $workspace8
     assign [class="Project Zomboid"] $workspace8
     assign [class="discord"] $workspace9
+    assign [app_id="thunderbird"] $workspace9
     assign [app_id="deadbeef"] $workspace10
-    assign [app_id="guitarix"] $workspace10
 
     for_window [title="Picture-in-Picture"] floating enable
     for_window [class="Matplotlib"] floating enable
