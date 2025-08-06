@@ -32,6 +32,8 @@ vim/*
 !powershell
 !htop
 !remmina
+!npm
+!btop
 
 # But ignore these...
 mozilla/thunderbird/
