@@ -94,29 +94,9 @@ return {
 		--  - settings (table): Override the default settings passed when initializing the server.
 		-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 		local servers = {
+			bashls = {},
 			clangd = {},
-			lua_ls = {},
-			stylua = {},
 			csharp_ls = {},
-			pylsp = {
-				settings = {
-					pylsp = {
-						plugins = {
-							pylint = {
-								enabled = true,
-								args = { "--rcfile=pyproject.toml" },
-							},
-							pycodestyle = { enabled = false },
-							mccabe = { enabled = false },
-							pyflakes = { enabled = false },
-						},
-					},
-				},
-			},
-			pyink = { enabled = true },
-			pylint = {},
-			html = {},
-			ts_ls = {},
 			eslint = {
 				settings = {
 					eslint = {
@@ -129,8 +109,37 @@ return {
 					},
 				},
 			},
-			bashls = {},
+			gopls = {
+				settings = {
+					gopls = {
+						gofumpt = true,
+					},
+				},
+			},
+			gofumpt = {},
+			html = {},
+			lua_ls = {},
+			pyink = { enabled = true },
+			pylint = {},
+			pylsp = {
+				settings = {
+					pylsp = {
+						plugins = {
+							pylint = {
+								enabled = true,
+								args = { "--rcfile=pyproject.toml" },
+							},
+							pycodestyle = { enabled = false },
+							mccabe = { enabled = false },
+							pyflakes = { enabled = false },
+							pyink = { enabled = true },
+						},
+					},
+				},
+			},
 			shfmt = {},
+			stylua = {},
+			ts_ls = {},
 		}
 
 		local ensure_installed = vim.tbl_filter(function(key)
