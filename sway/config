@@ -184,7 +184,7 @@ input $mouse {
     assign [app_id="org.gnome.Nautilus"] $workspace4
     assign [app_id="guitarix"] $workspace4
     assign [app_id="DBeaver"] $workspace5
-    assign [class="qBittorrent"] $workspace5
+    assign [class="org.qbittorrent.qBittorrent"] $workspace5
     assign [app_id="org.remmina.Remmina"] $workspace7
     assign [app_id="virt-manager"] $workspace7
     assign [class="steam"] $workspace8
