@@ -34,6 +34,8 @@ vim/*
 !remmina
 !npm
 !btop
+!darktable
+darktable/*.db*
 
 # But ignore these...
 mozilla/thunderbird/
