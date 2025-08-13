@@ -129,7 +129,7 @@ mp3.write_id3v1 1
 mp3.write_id3v2 1
 network.proxy.port 8080
 output_plugin pipewire
-pipewire_soundcard bluez_output.00_42_79_4F_B6_D4.1
+pipewire_soundcard default
 playback.loop 0
 playback.order 0
 playback.volume.normalized 1.0000000
@@ -180,10 +180,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 777
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 0
-resume.playlist -1
-resume.position -1.000000
-resume.track -1
+resume.paused 1
+resume.playlist 0
+resume.position 99.563095
+resume.track 865
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0

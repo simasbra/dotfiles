@@ -25,16 +25,16 @@ set $term foot
 set $menu tofi-run | xargs swaymsg exec --
 
 # Workspace names
-set $workspace1 "1 Browser"
-set $workspace2 "2 Terminal"
-set $workspace3 "3 Development"
-set $workspace4 "4 Utilities"
-set $workspace5 "5 Connections"
-set $workspace6 "6 Misc"
-set $workspace7 "7 Computers"
-set $workspace8 "8 Games"
-set $workspace9 "9 Messages"
-set $workspace10 "10 Music"
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace4 "4"
+set $workspace5 "5"
+set $workspace6 "6"
+set $workspace7 "7"
+set $workspace8 "8"
+set $workspace9 "9"
+set $workspace10 "10"
 
 # Hardware
 set $mouse "1133:16493:Logitech_M705"
@@ -72,8 +72,8 @@ for_window [app_id=".*"] inhibit_idle fullscreen
 # Read `man 5 sway-input` for more information about this section.
 
 input "type:keyboard" {
-    xkb_layout "us,lt,us"
-    xkb_variant ",,colemak"
+    xkb_layout "us,lt"
+    xkb_variant "colemak,"
     xkb_options "caps:escape, grp:alt_space_toggle"
     repeat_delay 300
     repeat_rate 50
@@ -180,19 +180,29 @@ input $mouse {
     # swaymsg -t get_tree | grep -E "app_id|class"
     assign [app_id="firefox*"] $workspace1
     assign [app_id="[Ll]ibre[Ww]olf"] $workspace1
+
     assign [app_id="brasero"] $workspace4
     assign [app_id="org.gnome.Nautilus"] $workspace4
-    assign [app_id="guitarix"] $workspace4
-    assign [app_id="DBeaver"] $workspace5
-    assign [class="org.qbittorrent.qBittorrent"] $workspace5
-    assign [app_id="org.remmina.Remmina"] $workspace7
-    assign [app_id="virt-manager"] $workspace7
+
+    assign [class="Darktable"] $workspace5
+    assign [app_id="rawtherapee"] $workspace5
+
+    assign [app_id="DBeaver"] $workspace6
+    assign [class="org.qbittorrent.qBittorrent"] $workspace6
+    assign [app_id="org.remmina.Remmina"] $workspace6
+    assign [app_id="virt-manager"] $workspace6
+
+    assign [class="Ardour"] $workspace7
+    assign [app_id="guitarix"] $workspace7
+
     assign [class="steam"] $workspace8
     assign [class="Cities.x64"] $workspace8
     assign [class="Paradox Launcher"] $workspace8
     assign [class="Project Zomboid"] $workspace8
+
     assign [class="discord"] $workspace9
     assign [app_id="thunderbird"] $workspace9
+
     assign [app_id="deadbeef"] $workspace10
 
     for_window [title="Picture-in-Picture"] floating enable
