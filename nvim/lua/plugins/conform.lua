@@ -79,7 +79,18 @@ return {
 					} or {},
 				},
 				prettier = {
-					prepend_args = { "--print-width", "100", "--arrow-parens", "avoid", "--single-quote" },
+					prepend_args = {
+						"--print-width",
+						"100",
+						"--arrow-parens",
+						"avoid",
+						"--trailing-comma",
+						"none",
+						"--experimental-operator-position",
+						"start",
+						"--single-quote",
+						"--single-attribute-per-line",
+					},
 				},
 			},
 			vim.keymap.set("n", "<leader>fb", function()

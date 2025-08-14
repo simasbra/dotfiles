@@ -1,6 +1,6 @@
 let mapleader = " "
 let maplocalleader = " "
- 
+
 set number
 set relativenumber
 set mouse=a
@@ -23,10 +23,12 @@ set showcmd
 set visualbell
 set highlightedyank
 set which-key
- 
+set wrap
+
+nnoremap Y y$
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
- 
+
 nnoremap <C-w>h <C-w>h
 nnoremap <C-w>n <C-w>j
 nnoremap <C-w>l <C-w>k
@@ -35,7 +37,7 @@ nnoremap <C-w><C-h> <C-w>h
 nnoremap <C-w><C-n> <C-w>j
 nnoremap <C-w><C-l> <C-w>k
 nnoremap <C-w><C-e> <C-w>l
- 
+
 noremap J E
 noremap j e
 noremap N K
@@ -45,7 +47,10 @@ noremap e l
 noremap K Nzz
 noremap k nzz
 noremap l k
- 
+
 map gcc <Action>(CommentByLineComment)
-map <leader>rn <Action>(RenameElement)
+map grn <Action>(RenameElement)
 map <leader>fb <Action>(ReformatCode)
+map <leader>sar <Action>(Replace)
+map <leader><space> <Action>(SearchEverywhere)
+map <leader>sf <Action>(SearchEverywhere)
