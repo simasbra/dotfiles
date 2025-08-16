@@ -127,7 +127,7 @@ return {
 						plugins = {
 							pylint = {
 								enabled = true,
-								args = { "--rcfile=pyproject.toml" },
+								args = { "--rcfile=pyproject.toml", "--max-line-length=120" },
 							},
 							pycodestyle = { enabled = false },
 							mccabe = { enabled = false },
