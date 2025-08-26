@@ -188,7 +188,7 @@ input $mouse {
     assign [app_id="rawtherapee"] $workspace5
 
     assign [app_id="DBeaver"] $workspace6
-    assign [class="org.qbittorrent.qBittorrent"] $workspace6
+    assign [app_id="org.qbittorrent.qBittorrent"] $workspace6
     assign [app_id="org.remmina.Remmina"] $workspace6
     assign [app_id="virt-manager"] $workspace6
 
