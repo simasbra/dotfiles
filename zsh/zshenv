@@ -77,6 +77,6 @@ case "$(uname -s)" in
 		;;
 	Darwin)
 		# opt applications
-		export PATH="$PATH:/opt/homebrew/bin"
+		export PATH="$PATH:/opt/homebrew/bin:/opt/homebrew/share/zsh/site-functions"
 		;;
 esac
