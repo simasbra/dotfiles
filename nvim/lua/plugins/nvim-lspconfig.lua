@@ -96,7 +96,8 @@ return {
 		local servers = {
 			bashls = {},
 			clangd = {},
-			csharp_ls = {},
+			-- csharp_ls = {},
+			omnisharp = {},
 			eslint = {
 				settings = {
 					eslint = {
