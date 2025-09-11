@@ -1,6 +1,8 @@
 #!/usr/bin/env zsh
 
+# aliases
 alias ls="ls -1 --color=auto"
+alias cp="cp --preserve=timestamps"
 
 # auto complete
 autoload -U compinit
