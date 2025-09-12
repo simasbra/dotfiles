@@ -15,7 +15,6 @@
 !i3
 !sway
 !tofi
-!mozilla
 !clangd
 !clang-format
 !linearmouse
@@ -35,6 +34,4 @@ vim/*
 !btop
 !darktable
 darktable/*.db*
-
-# But ignore these...
-mozilla/thunderbird/
+!vlc
