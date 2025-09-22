@@ -1,5 +1,4 @@
 return {
-
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		-- Automatically install LSPs and related tools to stdpath for Neovim
@@ -143,12 +142,6 @@ return {
 			ts_ls = {},
 		}
 
-		local ensure_installed = vim.tbl_filter(function(key)
-			return key ~= "ccls"
-		end, vim.tbl_keys(servers))
-
-		-- require("lspconfig").ccls.setup(servers.ccls)
-
 		require("mason").setup()
 		require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 		require("mason-lspconfig").setup({
@@ -163,6 +156,13 @@ return {
 						vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
 					require("lspconfig")[server_name].setup(server)
 				end,
+			},
+		})
+		require("lspconfig").ruby_lsp.setup({
+			capabilities = capabilities,
+			init_options = {
+				formatter = "standard",
+				linters = { "standard" },
 			},
 		})
 	end,
