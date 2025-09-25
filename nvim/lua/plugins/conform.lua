@@ -17,6 +17,7 @@ return {
 			lua = { "stylua" },
 			markdown = { "prettier" },
 			python = { "pyink" },
+			ruby = { "rubyfmt" },
 			scss = { "prettier" },
 			sh = { "shfmt" },
 			typescript = { "prettier" },
