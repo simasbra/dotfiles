@@ -119,24 +119,24 @@ return {
 			gofumpt = {},
 			html = {},
 			lua_ls = {},
-			pyink = { enabled = true },
-			pylint = {},
-			pylsp = {
-				settings = {
-					pylsp = {
-						plugins = {
-							pylint = {
-								enabled = true,
-								args = { "--rcfile=pyproject.toml", "--max-line-length=120" },
-							},
-							pycodestyle = { enabled = false },
-							mccabe = { enabled = false },
-							pyflakes = { enabled = false },
-							pyink = { enabled = true },
-						},
-					},
-				},
-			},
+			-- pyink = { enabled = true },
+			-- pylint = {},
+			-- pylsp = {
+			-- 	settings = {
+			-- 		pylsp = {
+			-- 			plugins = {
+			-- 				pylint = {
+			-- 					enabled = true,
+			-- 					args = { "--rcfile=pyproject.toml", "--max-line-length=120" },
+			-- 				},
+			-- 				pycodestyle = { enabled = false },
+			-- 				mccabe = { enabled = false },
+			-- 				pyflakes = { enabled = false },
+			-- 				pyink = { enabled = true },
+			-- 			},
+			-- 		},
+			-- 	},
+			-- },
 			shfmt = {},
 			stylua = {},
 			ts_ls = {},
@@ -158,12 +158,12 @@ return {
 				end,
 			},
 		})
-		require("lspconfig").ruby_lsp.setup({
-			capabilities = capabilities,
-			init_options = {
-				formatter = "standard",
-				linters = { "standard" },
-			},
-		})
+		-- require("lspconfig").ruby_lsp.setup({
+		-- 	capabilities = capabilities,
+		-- 	init_options = {
+		-- 		formatter = "standard",
+		-- 		linters = { "standard" },
+		-- 	},
+		-- })
 	end,
 }
