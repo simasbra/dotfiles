@@ -13,6 +13,7 @@ _comp_options+=(globdots) # with hidden files
 [ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME/zsh"
 HISTFILE="$XDG_STATE_HOME/zsh/history"
 setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
 
 # completion cache
 [ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME/zsh"
