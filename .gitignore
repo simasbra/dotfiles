@@ -35,3 +35,6 @@ vim/*
 !darktable
 darktable/*.db*
 !vlc
+!systemd
+!systemd/user/*.service
+systemd/user/*

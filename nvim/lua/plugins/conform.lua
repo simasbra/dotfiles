@@ -15,7 +15,6 @@ return {
 			javascriptreact = { "prettier" },
 			json = { "prettier" },
 			lua = { "stylua" },
-			markdown = { "prettier" },
 			python = { "pyink" },
 			ruby = { "rubyfmt" },
 			scss = { "prettier" },

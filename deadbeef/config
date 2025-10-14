@@ -182,8 +182,8 @@ prefwin.geometry.x 0
 prefwin.geometry.y 0
 resume.paused 0
 resume.playlist 0
-resume.position 0.0142188
-resume.track 27
+resume.position 0.0284375
+resume.track 1480
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0
