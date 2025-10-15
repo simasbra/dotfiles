@@ -97,18 +97,18 @@ return {
 			clangd = {},
 			-- csharp_ls = {},
 			omnisharp = {},
-			eslint = {
-				settings = {
-					eslint = {
-						autoFixOnSave = true,
-						packageManager = "yarn",
-						workingDirectories = { mode = "auto" },
-						-- experimental = {
-						-- 	useFlatConfig = true,
-						-- },
-					},
-				},
-			},
+			-- eslint = {
+			-- 	settings = {
+			-- 		eslint = {
+			-- 			autoFixOnSave = true,
+			-- 			packageManager = "yarn",
+			-- 			workingDirectories = { mode = "auto" },
+			-- 			-- experimental = {
+			-- 			-- 	useFlatConfig = true,
+			-- 			-- },
+			-- 		},
+			-- 	},
+			-- },
 			gopls = {
 				settings = {
 					gopls = {

@@ -92,7 +92,6 @@ return {
 						"true",
 						"--jsx-single-quote",
 						"true",
-						"--single-attribute-per-line",
 					},
 				},
 			},
