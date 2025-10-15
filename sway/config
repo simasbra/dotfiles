@@ -184,10 +184,11 @@ input $mouse {
     assign [app_id="brasero"] $workspace4
     assign [app_id="org.gnome.Nautilus"] $workspace4
     assign [app_id="org.kde.k3b"] $workspace4
+    assign [app_id="anki"] $workspace4
 
     assign [class="Darktable"] $workspace5
     assign [app_id="rawtherapee"] $workspace5
-    assign [app_id="anki"] $workspace5
+    assign [app_id="gimp"] $workspace5
 
     assign [app_id="DBeaver"] $workspace6
     assign [app_id="org.qbittorrent.qBittorrent"] $workspace6
