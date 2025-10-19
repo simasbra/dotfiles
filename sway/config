@@ -294,12 +294,14 @@ bindsym $mod+Shift+F12 exec playerctl volume 0.0625+
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-    status_command ${XDG_CONFIG_HOME}/sway/status_bar.sh
+    status_command ${XDG_CONFIG_HOME}/sway/scripts/status_bar.sh
     colors {
         statusline #ffffff
         background #000000
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
+
+exec /bin/sh "$XDG_CONFIG_HOME/sway/scripts/night_light.sh"
 
 include /etc/sway/config.d/*
