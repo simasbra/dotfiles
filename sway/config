@@ -43,7 +43,7 @@ include /etc/sway/config-vars.d/*
 
 ### Output configuration
 
-output * bg /home/simas/[Pp]ictures/DSC_2678.jpg fill
+output * bg /home/simas/[Pp]ictures/DSC_2678.jpg fill #000000
 font pango:JetBrainsMonoNL Nerd Font 12
 
 output DP-1 resolution 3840x2160 scale 1.5
