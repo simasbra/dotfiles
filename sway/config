@@ -36,9 +36,6 @@ set $workspace8 "8"
 set $workspace9 "9"
 set $workspace10 "10"
 
-# Hardware
-set $mouse "1133:16493:Logitech_M705"
-
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
@@ -79,7 +76,15 @@ input "type:keyboard" {
     repeat_rate 50
 }
 
-input $mouse {
+input "1452:835:Apple_SPI_Keyboard" {
+    xkb_layout "us,lt"
+    xkb_variant "colemak,"
+    xkb_options "caps:escape, grp:alt_space_toggle, ctrl:swap_ralt_rctl"
+    repeat_delay 300
+    repeat_rate 50
+}
+
+input "1133:16493:Logitech_M705" {
     natural_scroll disabled
     accel_profile "flat"
     pointer_accel -0.5 # set mouse sensitivity (between -1 and 1)
@@ -288,6 +293,19 @@ bindsym $mod+Shift+F10 exec /bin/sh -c "if [[ "$(awk "BEGIN {print ("$(playerctl
                                         else playerctl volume 1; fi"
 bindsym $mod+Shift+F11 exec playerctl volume 0.0625-
 bindsym $mod+Shift+F12 exec playerctl volume 0.0625+
+
+# Fn control buttons
+
+bindsym XF86MonBrightnessUp exec brightnessctl s +5%+
+bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
+
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Status Bar:
 

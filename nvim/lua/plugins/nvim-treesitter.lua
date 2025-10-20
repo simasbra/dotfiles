@@ -25,7 +25,8 @@ return {
 	},
 	config = function(_, opts)
 		-- See `:help nvim-treesitter`
-		require("nvim-treesitter.install").compilers = vim.fn.has("win32") == 0 and { "gcc", "clang" } or { "zig" }
+		require("nvim-treesitter.install").compilers = vim.fn.has("win32") == 0 and { "gcc", "clang" } or
+		{ "zig" }
 		require("nvim-treesitter.configs").setup(opts)
 
 		-- There are additional nvim-treesitter modules that you can use to interact
