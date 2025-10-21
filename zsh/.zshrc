@@ -13,7 +13,6 @@ _comp_options+=(globdots) # with hidden files
 [ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME/zsh"
 HISTFILE="$XDG_STATE_HOME/zsh/history"
 setopt HIST_IGNORE_DUPS
-setopt SHARE_HISTORY
 
 # completion cache
 [ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME/zsh"
@@ -38,15 +37,13 @@ bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 # node shit
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-# alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)
 autoload -U promptinit
 promptinit
 prompt pure
-PURE_PROMPT_SYMBOL=">"
-PURE_PROMPT_VICMD_SYMBOL="<"
 
 # syntax highlighting
 case "$(uname -s)" in
