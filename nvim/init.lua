@@ -33,7 +33,7 @@ local plugins = {
 	require("plugins.nvim-lspconfig"),
 	require("plugins.nvim-treesitter"),
 	require("plugins.blink-cmp"),
-	-- require("plugins.nvim-autopairs"),
+	require("plugins.nvim-autopairs"),
 
 	-- formatting and lint
 	require("plugins.conform"),

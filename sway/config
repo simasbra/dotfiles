@@ -214,6 +214,7 @@ input "1452:835:Apple_SPI_Trackpad" {
     assign [class="Minecraft*"] $workspace8
 
     assign [class="discord"] $workspace9
+    assign [class="vesktop"] $workspace9
     assign [app_id="thunderbird"] $workspace9
 
     assign [app_id="deadbeef"] $workspace10

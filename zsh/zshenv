@@ -50,6 +50,7 @@ export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 # java
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export _JAVA_AWT_WM_NONREPARENTING=1
+export LEIN_HOME="$XDG_DATA_HOME/lein"
 
 # discord
 export DISCORD_USER_DATA_DIR="$XDG_DATA_HOME/discord"
