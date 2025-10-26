@@ -189,6 +189,8 @@ input "1452:835:Apple_SPI_Trackpad" {
     assign [app_id="firefox*"] $workspace1
     assign [app_id="[Ll]ibre[Ww]olf"] $workspace1
 
+    assign [class="jetbrains-idea-ce"] $workspace3
+
     assign [app_id="brasero"] $workspace4
     assign [app_id="org.gnome.Nautilus"] $workspace4
     assign [app_id="org.kde.k3b"] $workspace4
