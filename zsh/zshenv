@@ -8,6 +8,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # gtk
 export GTK_THEME="Adwaita:dark"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
 
 # default apps
 export EDITOR="nvim"

@@ -37,7 +37,6 @@ bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 # node shit
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)
