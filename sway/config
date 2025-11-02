@@ -79,7 +79,7 @@ input "type:keyboard" {
 input "1452:835:Apple_SPI_Keyboard" {
     xkb_layout "us,lt"
     xkb_variant "colemak,"
-    xkb_options "caps:escape, grp:alt_space_toggle, ctrl:swap_ralt_rctl"
+    xkb_options "caps:escape, grp:alt_space_toggle, ctrl:swap_ralt_rctl, ctrl:swap_lalt_lctl"
     repeat_delay 300
     repeat_rate 50
 }
@@ -347,6 +347,7 @@ bar {
     tray_output none
 }
 
-exec /bin/sh "$XDG_CONFIG_HOME/sway/scripts/night_light.sh"
+# exec "$XDG_CONFIG_HOME/sway/scripts/night_light.sh"
+exec_always $XDG_CONFIG_HOME/sway/scripts/keyboard_notifications.sh
 
 include /etc/sway/config.d/*

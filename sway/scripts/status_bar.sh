@@ -4,9 +4,7 @@ CHASSIS=$(hostnamectl chassis)
 
 while true; do
 	DATE=$(date +'%b %d, %H:%M')
-	LAYOUT=$(swaymsg -t get_inputs |
-		jq -r 'map(select(has("xkb_active_layout_name")))[0].xkb_active_layout_name')
-	OUTPUT="$LAYOUT | $DATE"
+	OUTPUT="$DATE"
 
 	if [ $CHASSIS = "laptop" ]; then
 		CAPACITY=$(cat /sys/class/power_supply/macsmc-battery/capacity)
@@ -26,5 +24,5 @@ while true; do
 	fi
 	echo $OUTPUT
 
-	sleep 1
+	sleep 5
 done
