@@ -34,3 +34,6 @@ vim/*
 !darktable
 darktable/*.db*
 !vlc
+!teams-for-linux
+teams-for-linux/*
+!teams-for-linux/config.json

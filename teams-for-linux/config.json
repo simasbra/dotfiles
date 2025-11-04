@@ -1,0 +1,6 @@
+{
+	"closeAppOnCross": true,
+	"trayIconEnabled": false,
+	"awayOnSystemIdle": true,
+	"appActiveCheckInterval": 300
+}
