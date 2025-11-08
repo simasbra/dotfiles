@@ -13,20 +13,6 @@
 	font-size: 16px;
 }
 
-#battery,
-#clock,
-#cpu,
-#custom-keyboard-layout,
-#memory,
-#mode,
-#network,
-#pulseaudio,
-#temperature,
-#tray {
-	padding: 0 10px;
-}
-
-
 #battery.warning {
 	color: orange;
 }
@@ -35,46 +21,8 @@
 	color: red;
 }
 
-#battery.warning.discharging {
-	animation-name: blink-warning;
-	animation-duration: 3s;
-}
-
-#battery.critical.discharging {
-	animation-name: blink-critical;
-	animation-duration: 2s;
-}
-
-#clock {
-	font-weight: bold;
-}
-
-#network {
-	/* No styles */
-}
-
 #network.disconnected {
 	color: orange;
-}
-
-#pulseaudio {
-	/* No styles */
-}
-
-#pulseaudio.muted {
-	/* No styles */
-}
-
-#temperature {
-	/* No styles */
-}
-
-#temperature.critical {
-	color: red;
-}
-
-#tray {
-	/* No styles */
 }
 
 #workspaces button {
