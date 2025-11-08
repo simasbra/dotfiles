@@ -337,14 +337,15 @@ bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -1%
 
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-    status_command ${XDG_CONFIG_HOME}/sway/scripts/status_bar.sh
-    colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-    tray_output none
+    swaybar_command waybar
+    # position top
+    # status_command ${XDG_CONFIG_HOME}/sway/scripts/status_bar.sh
+    # colors {
+    #     statusline #ffffff
+    #     background #000000
+    #     inactive_workspace #32323200 #32323200 #5c5c5c
+    # }
+    # tray_output none
 }
 
 # exec "$XDG_CONFIG_HOME/sway/scripts/night_light.sh"

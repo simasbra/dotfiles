@@ -37,3 +37,4 @@ darktable/*.db*
 !teams-for-linux
 teams-for-linux/*
 !teams-for-linux/config.json
+!waybar
