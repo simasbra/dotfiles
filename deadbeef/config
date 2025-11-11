@@ -39,7 +39,8 @@ filebrowser.showicons 1
 filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
-filechooser.lastdir file:///home/simas/music/Derek%20and%20the%20Dominos/Derek%20&%20The%20Dominos%20-%20Layla%20And%20Other%20Assorted%20Love%20Songs%20(UK%20LP)
+filechooser.lastdir file:///home/simas/music/Tears%20For%20Fears
+filechooser.playlist.lastdir file:///home/simas/music/Dua%20Lipa
 gtkui.action_separators 0
 gtkui.autoresize_columns 0
 gtkui.columns.playlist [{"title":"Album Art","id":"8","format":"","sort_format":"","size":"283","align":"0","color_override":"0","color":"#ff000000"},{"title":"No","id":"-1","format":"%tracknumber%","sort_format":"","size":"41","align":"1","color_override":"0","color":"#ff000000"},{"title":"Artist","id":"-1","format":"$if(%artist%,%artist%,Unknown Artist)","sort_format":"","size":"488","align":"0","color_override":"0","color":"#ff000000"},{"title":"Title","id":"-1","format":"%title%","sort_format":"","size":"695","align":"0","color_override":"0","color":"#ffeeeeec"},{"title":"Duration","id":"-1","format":"%length%","sort_format":"","size":"173","align":"0","color_override":"0","color":"#ff000000"}]
@@ -131,10 +132,10 @@ network.proxy.port 8080
 output_plugin pipewire
 pipewire_soundcard default
 playback.loop 0
-playback.order 0
+playback.order 3
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 1792
+playlist.cursor.0 1381
 playlist.cursor.1 0
 playlist.cursor.10 0
 playlist.cursor.11 0
@@ -155,7 +156,7 @@ playlist.cursor.8 0
 playlist.cursor.9 0
 playlist.groups.spacing 8
 playlist.pin.groups 1
-playlist.scroll.0 51781
+playlist.scroll.0 53463
 playlist.scroll.1 0
 playlist.scroll.10 0
 playlist.scroll.11 0
@@ -182,8 +183,8 @@ prefwin.geometry.x 0
 prefwin.geometry.y 0
 resume.paused 1
 resume.playlist 0
-resume.position 135.41471
-resume.track 452
+resume.position 98.916847
+resume.track 1314
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0
