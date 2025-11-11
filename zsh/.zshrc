@@ -62,3 +62,18 @@ case "$(uname -s)" in
 		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
 		;;
 esac
+
+# fucking dotnet
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  if [ -z "$completions" ]
+  then
+    _arguments '*::arguments: _normal'
+    return
+  fi
+  _values = "${(ps:\n:)completions}"
+}
+
+compdef _dotnet_zsh_complete dotnet
