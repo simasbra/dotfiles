@@ -1,7 +1,7 @@
 {
 	"height": 28,
 	"spacing": 16,
-	"reload_style_on_change": true,
+	// "reload_style_on_change": true,
 	"modules-left": [
 		"sway/workspaces",
 		"sway/mode"
@@ -9,7 +9,6 @@
 	"modules-right": [
 		"network",
 		"power-profiles-daemon",
-		"sway/language",
 		"battery",
 		"clock",
 	],
@@ -17,7 +16,7 @@
 		"timezone": "Europe/Vilnius",
 		"format": "{:L%H:%M}",
 		"tooltip-format": "<tt>{calendar}</tt>",
-		"format-alt": "{:%Y-%m-%d}",
+		"format-alt": "{:L%Y-%m-%d}",
 		"calendar": {
 			"mode": "month",
 			"mode-mon-col": 3
@@ -31,17 +30,18 @@
 			"warning": 20,
 			"critical": 10
 		},
-		"format": "{icon} {capacity}%",
-		"format-alt": "{icon} {time}",
-		"format-icons": ["", "", "", "", ""]
+		"format": "{capacity}%",
+		"format-alt": "{time}"
 	},
 	"network": {
-		"format-wifi": " {essid}",
-		"format-disconnected": " Disconnected",
+		"format": "",
+		"format-wifi": "{essid}",
+		"format-disconnected": "Disconnected",
+		"tooltip-format": "{ifname} via {gwaddr}",
 		"format-alt": "{ifname}: {ipaddr}/{cidr}"
 	},
 	"sway/language": {
-		"format": " {short}",
-		"format-alt": " {long}"
+		"format": "{short}",
+		"format-alt": "{long}"
 	}
 }

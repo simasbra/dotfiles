@@ -7,7 +7,7 @@
 }
 
 #waybar {
-	background: #000000;
+	background: black;
 	color: white;
 	font-family: "JetBrainsMonoNL Nerd Font";
 	font-size: 16px;
@@ -26,17 +26,19 @@
 }
 
 #workspaces button {
-	padding: 2px;
+	border: 1px solid black;
 	color: #5c5c5c;
+	padding: 2px;
 }
 
 #workspaces button.focused {
 	border: 1px solid #4c7899;
-	color: white;
 	background-color: #285577;
+	color: white;
 }
 
 #workspaces button.urgent {
 	border: 1px solid #2f343a;
-	color: #900000;
+	background-color: #900000;
+	color: white;
 }
