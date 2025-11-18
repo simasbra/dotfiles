@@ -39,7 +39,7 @@ filebrowser.showicons 1
 filebrowser.sidebar_width 200
 filebrowser.sort_treeview 1
 filebrowser.treelines 0
-filechooser.lastdir file:///home/simas/music/Tears%20For%20Fears
+filechooser.lastdir file:///home/simas/music/Empire%20of%20the%20Sun
 filechooser.playlist.lastdir file:///home/simas/music/Dua%20Lipa
 gtkui.action_separators 0
 gtkui.autoresize_columns 0
@@ -135,7 +135,7 @@ playback.loop 0
 playback.order 3
 playback.volume.normalized 1.0000000
 playlist.current 0
-playlist.cursor.0 1381
+playlist.cursor.0 1588
 playlist.cursor.1 0
 playlist.cursor.10 0
 playlist.cursor.11 0
@@ -156,7 +156,7 @@ playlist.cursor.8 0
 playlist.cursor.9 0
 playlist.groups.spacing 8
 playlist.pin.groups 1
-playlist.scroll.0 53463
+playlist.scroll.0 -1588
 playlist.scroll.1 0
 playlist.scroll.10 0
 playlist.scroll.11 0
@@ -181,10 +181,10 @@ prefwin.geometry.h 596
 prefwin.geometry.w 777
 prefwin.geometry.x 0
 prefwin.geometry.y 0
-resume.paused 1
+resume.paused 0
 resume.playlist 0
-resume.position 98.916847
-resume.track 1314
+resume.position 0.0928798
+resume.track 697
 searchwin.geometry.h 150
 searchwin.geometry.w 450
 searchwin.geometry.x 0

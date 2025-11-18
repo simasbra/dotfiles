@@ -10,6 +10,7 @@ return {
 			css = { "prettier" },
 			go = { "gofumpt" },
 			h = { "clang-format" },
+			haskell = { "fourmolu" },
 			html = { "prettier" },
 			javascript = { "prettier" },
 			javascriptreact = { "prettier" },

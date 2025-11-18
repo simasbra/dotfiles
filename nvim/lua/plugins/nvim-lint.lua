@@ -9,6 +9,7 @@ return {
 		lint.linters_by_ft = {
 			javascript = { "quick-lint-js", "eslint", "eslint_d" },
 			javascriptreact = { "quick-lint-js", "eslint", "eslint_d" },
+			haskell = { "hlint" },
 			typescript = { "eslint", "eslint_d" },
 			typescriptreact = { "eslint", "eslint_d" },
 			python = { "pylint" },
