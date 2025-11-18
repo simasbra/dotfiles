@@ -120,6 +120,7 @@ return {
 			html = {},
 			kotlin_lsp = {},
 			lua_ls = {},
+			quick_lint_js = {},
 			-- pyink = { enabled = true },
 			-- pylint = {},
 			-- pylsp = {
