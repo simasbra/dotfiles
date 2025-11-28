@@ -27,12 +27,12 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # colemak replacements normal mode
-bindkey -M vicmd "J" forward-word         # Swap J with E
-bindkey -M vicmd "j" vi-forward-word      # Swap j with e
-bindkey -M vicmd "N" run-help             # Swap N with K
-bindkey -M vicmd "n" down-line-or-history # Swap n with j
-bindkey -M vicmd "e" forward-char         # Swap e with l
-bindkey -M vicmd "l" up-line-or-history   # Swap l with k
+# bindkey -M vicmd "J" forward-word         # Swap J with E
+# bindkey -M vicmd "j" vi-forward-word      # Swap j with e
+# bindkey -M vicmd "N" run-help             # Swap N with K
+# bindkey -M vicmd "n" down-line-or-history # Swap n with j
+# bindkey -M vicmd "e" forward-char         # Swap e with l
+# bindkey -M vicmd "l" up-line-or-history   # Swap l with k
 
 # node shit
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -62,18 +62,3 @@ case "$(uname -s)" in
 		source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # macos
 		;;
 esac
-
-# fucking dotnet
-_dotnet_zsh_complete()
-{
-  local completions=("$(dotnet complete "$words")")
-
-  if [ -z "$completions" ]
-  then
-    _arguments '*::arguments: _normal'
-    return
-  fi
-  _values = "${(ps:\n:)completions}"
-}
-
-compdef _dotnet_zsh_complete dotnet

@@ -6,7 +6,7 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		-- Useful status updates for LSP.
-		{ "j-hui/fidget.nvim", opts = {} },
+		{ "j-hui/fidget.nvim",    opts = {} },
 		-- Allows extra capabilities provided by nvim-cmp
 		-- "hrsh7th/cmp-nvim-lsp",
 		-- Allows extra capabilities provided by blink.cmp
@@ -31,7 +31,8 @@ return {
 				map("grr", require("telescope.builtin").lsp_references, "Goto References")
 				map("grt", require("telescope.builtin").lsp_type_definitions, "Goto Type Definition")
 				map("gO", require("telescope.builtin").lsp_document_symbols, "Open Document Symbols")
-				map("gW", require("telescope.builtin").lsp_dynamic_workspace_symbols, "Open Workspace Symbols")
+				map("gW", require("telescope.builtin").lsp_dynamic_workspace_symbols,
+					"Open Workspace Symbols")
 				map("N", vim.lsp.buf.hover, "Display hover information")
 
 				-- The following two auto commands are used to highlight references of the
@@ -39,11 +40,11 @@ return {
 				--    See `:help CursorHold` for information about when this is executed
 				local client = vim.lsp.get_client_by_id(event.data.client_id)
 				if
-					client
-					and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight)
+				    client
+				    and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight)
 				then
 					local highlight_augroup =
-						vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
+					    vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
 					vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 						buffer = event.buf,
 						group = highlight_augroup,
@@ -57,7 +58,8 @@ return {
 					})
 
 					vim.api.nvim_create_autocmd("LspDetach", {
-						group = vim.api.nvim_create_augroup("kickstart-lsp-detach", { clear = true }),
+						group = vim.api.nvim_create_augroup("kickstart-lsp-detach",
+							{ clear = true }),
 						callback = function(event2)
 							vim.lsp.buf.clear_references()
 							vim.api.nvim_clear_autocmds({
@@ -118,7 +120,6 @@ return {
 			},
 			gofumpt = {},
 			html = {},
-			kotlin_lsp = {},
 			lua_ls = {},
 			quick_lint_js = {},
 			-- pyink = { enabled = true },
@@ -157,7 +158,7 @@ return {
 					-- This handles overriding only values explicitly passed by the server configuration above.
 					-- Useful when disabling certain features of an LSP
 					server.capabilities =
-						vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+					    vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
 					require("lspconfig")[server_name].setup(server)
 				end,
 			},
