@@ -38,6 +38,7 @@ export KEYTIMEOUT=1
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 # alias yarn='yarn --use-yarnrc "$XDG_CONFIG_HOME/yarn/config"'
+[ -d "/usr/share/nvm" ] && source /usr/share/nvm/init-nvm.sh
 
 # pure prompt
 fpath+=($HOME/.config/zsh/pure)
