@@ -32,28 +32,47 @@ map(
 
 -- Colemak remappings
 
--- Window remappings
-map("n", "<C-w>h", "<C-w><C-h>", { noremap = true, desc = "Go to the left window" })
-map("n", "<C-w>k", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
-map("n", "<C-w>j", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
-map("n", "<C-w>l", "<C-w><C-l>", { noremap = true, desc = "Go to the right window" })
-map("n", "<C-w><C-k>", "<C-w><C-j>", { noremap = true, desc = "Go to the down window" })
-map("n", "<C-w><C-j>", "<C-w><C-k>", { noremap = true, desc = "Go to the up window" })
-
--- Swap k and j in colemak (more logical that upper key goes up and lower key goes down)
-map("n", "k", "j")
-map("n", "j", "k")
-map("v", "k", "j")
-map("v", "j", "k")
-map("o", "k", "j")
-map("o", "j", "k")
-
--- Moving selected text up or down
-map("v", "K", ":m '>+1<CR>gv=gv", { desc = "Move highlighted text down" })
-map("v", "J", ":m '<-2<CR>gv=gv", { desc = "Move highlighted text up" })
-
--- Centering found text
-map("n", "N", "Nzz", { desc = "Previous find" })
-map("n", "n", "Nzz", { desc = "Next find" })
-map("v", "N", "Nzz", { desc = "Previous find" })
-map("v", "n", "Nzz", { desc = "Next find" })
+local remappings = {
+	-- Normal mode
+	{ "n", "J", "E", "Jump end WORD (swap E)" },
+	{ "n", "j", "e", "Jump end word (swap e)" },
+	{ "n", "N", "K", "Help (swap K)" },
+	{ "n", "n", "j", "Down (swap j)" },
+	{ "n", "E", "J", "Join lines (swap J)" },
+	{ "n", "e", "l", "Right (swap l)" },
+	{ "n", "K", "Nzz", "Previous find (swap N)" }, -- Also centers the text
+	{ "n", "k", "nzz", "Next find (swap n)" }, -- Also centers the text
+	{ "n", "l", "k", "Up (swap k)" },
+	-- Visual mode
+	{ "v", "J", "E", "Jump end WORD (swap E)" },
+	{ "v", "j", "e", "Jump end word (swap e)" },
+	{ "v", "N", ":m '>+1<CR>gv=gv", "Move highlighted text down" },
+	{ "v", "L", ":m '<-2<CR>gv=gv", "Move highlighted text up" },
+	{ "v", "n", "j", "Down (swap j)" },
+	{ "v", "E", "J", "Join lines (swap J)" },
+	{ "v", "e", "l", "Right (swap l)" },
+	{ "v", "K", "Nzz", "Previous find (swap N)" },
+	{ "v", "k", "nzz", "Next find (swap n)" },
+	{ "v", "l", "k", "Up (swap k)" },
+	-- Operator pending mode
+	{ "o", "J", "E", "Jump end WORD (swap E)" },
+	{ "o", "j", "e", "Jump end word (swap e)" },
+	{ "o", "n", "j", "Down (swap j)" },
+	{ "o", "e", "l", "Right (swap l)" },
+	{ "o", "K", "Nzz", "Previous find (swap N)" },
+	{ "o", "k", "nzz", "Next find (swap n)" },
+	{ "o", "l", "k", "Up (swap k)" },
+	-- Window remappings
+	{ "n", "<C-w>h", "<C-w><C-h>", "Go to the left window" },
+	{ "n", "<C-w>n", "<C-w><C-j>", "Go to the down window" },
+	{ "n", "<C-w>l", "<C-w><C-k>", "Go to the up window" },
+	{ "n", "<C-w>e", "<C-w><C-l>", "Go to the right window" },
+	{ "n", "<C-w><C-h>", "<C-w><C-h>", "Go to the left window" },
+	{ "n", "<C-w><C-n>", "<C-w><C-j>", "Go to the down window" },
+	{ "n", "<C-w><C-l>", "<C-w><C-k>", "Go to the up window" },
+	{ "n", "<C-w><C-e>", "<C-w><C-l>", "Go to the right window" },
+}
+-- Apply the remappings
+for _, mapping in ipairs(remappings) do
+	map(mapping[1], mapping[2], mapping[3], { noremap = true, silent = true, desc = mapping[4] })
+end

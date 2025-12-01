@@ -29,10 +29,15 @@ nnoremap Y y$
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
-noremap N Nzz
-noremap n nzz
-noremap j k
-noremap k j
+noremap J E
+noremap j e
+noremap N K
+noremap n j
+noremap E J
+noremap e l
+noremap K Nzz
+noremap k nzz
+noremap l k
 
 map gcc <Action>(CommentByLineComment)
 map grn <Action>(RenameElement)
